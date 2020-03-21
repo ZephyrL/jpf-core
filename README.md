@@ -32,3 +32,5 @@ community.
 
 Happy Verification
 *-- the Java PathFinder team*
+
+java -jar build/RunJPF.jar src/examples/Racer.jpf
