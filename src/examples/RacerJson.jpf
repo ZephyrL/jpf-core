@@ -1,0 +1,5 @@
+target = Racer
+
+listener=gov.nasa.jpf.listener.JsonTraceFormatter
+
+report.console.property_violation=error,trace
