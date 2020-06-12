@@ -124,10 +124,10 @@ public class JsonTraceFormatter extends ListenerAdapter {
 			writer.delim();
 			ThreadInfo next = path.get(testCg.getTotalNumberOfChoices() - 1).getThreadInfo();
 
-			writer.assign("comm", next.getName()); // last choice
+			writer.assign("currentThreadName", next.getName()); // last choice
 			writer.delim();
 
-			writer.assign("pid", next.getId());
+			writer.assign("tid", next.getId());
 		}
 
         // switch
@@ -149,19 +149,19 @@ public class JsonTraceFormatter extends ListenerAdapter {
         int thisTid = tran.getThreadInfo().getId();
         int prevTid = prevTran.getThreadInfo().getId();
 
-        writer.assign("switch_thread", true);
+        writer.assign("switchThread", true);
         writer.delim();
 
-        writer.assign("prev_pid", prevTid);
+        writer.assign("prevTid", prevTid);
         writer.delim();
 
-        writer.assign("prev_comm", prevTran.getThreadInfo().getName());
+        writer.assign("prevThreadName", prevTran.getThreadInfo().getName());
         writer.delim();
 
-        writer.assign("next_pid", thisTid);
+        writer.assign("nextTid", thisTid);
         writer.delim();
 
-        writer.assign("next_comm", tran.getThreadInfo().getName());
+        writer.assign("nextThreadName", tran.getThreadInfo().getName());
 
 		writer.endBrace();
 
