@@ -40,7 +40,7 @@
 "currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
 "choices" : [
 "ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=RUNNING]"]
+"ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"]
 ,
 "steps" : [
 ]
@@ -55,17 +55,17 @@
 {
 "transitionId" : 2,
 "threadInfo" : {
-"threadId" : 0,
-"threadName" : "main",
+"threadId" : 1,
+"threadName" : "Thread-1",
 "threadEntryMethod" : "gov.nasa.jpf.util.test.TestJPF.runTestMethod([Ljava/lang/String;)V",
-"threadState" : "RUNNING"}
+"threadState" : "TERMINATED"}
 ,
 "choiceId" : "SLEEP",
 "numChoices" : 2,
-"currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
+"currentChoice" : "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
 "choices" : [
 "ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=RUNNING]"]
+"ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"]
 ,
 "steps" : [
 ]
@@ -73,22 +73,27 @@
 "numSteps" : 0,
 "instructions" : [
 ]
-}
+,
+"switchThread" : true,
+"prevTid" : 0,
+"prevThreadName" : "main",
+"nextTid" : 1,
+"nextThreadName" : "Thread-1"}
 ,
 {
 "transitionId" : 3,
 "threadInfo" : {
-"threadId" : 0,
-"threadName" : "main",
+"threadId" : 1,
+"threadName" : "Thread-1",
 "threadEntryMethod" : "gov.nasa.jpf.util.test.TestJPF.runTestMethod([Ljava/lang/String;)V",
-"threadState" : "RUNNING"}
+"threadState" : "TERMINATED"}
 ,
-"choiceId" : "LOCK",
+"choiceId" : "SLEEP",
 "numChoices" : 2,
-"currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
+"currentChoice" : "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
 "choices" : [
 "ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=RUNNING]"]
+"ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"]
 ,
 "steps" : [
 ]
@@ -106,12 +111,12 @@
 "threadEntryMethod" : "gov.nasa.jpf.util.test.TestJPF.runTestMethod([Ljava/lang/String;)V",
 "threadState" : "RUNNING"}
 ,
-"choiceId" : "LOCK",
+"choiceId" : "SHARED_OBJECT",
 "numChoices" : 2,
 "currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
 "choices" : [
 "ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=RUNNING]"]
+"ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"]
 ,
 "steps" : [
 ]
@@ -119,22 +124,27 @@
 "numSteps" : 0,
 "instructions" : [
 ]
-}
+,
+"switchThread" : true,
+"prevTid" : 1,
+"prevThreadName" : "Thread-1",
+"nextTid" : 0,
+"nextThreadName" : "main"}
 ,
 {
 "transitionId" : 5,
 "threadInfo" : {
-"threadId" : 0,
-"threadName" : "main",
+"threadId" : 1,
+"threadName" : "Thread-1",
 "threadEntryMethod" : "gov.nasa.jpf.util.test.TestJPF.runTestMethod([Ljava/lang/String;)V",
-"threadState" : "RUNNING"}
+"threadState" : "TERMINATED"}
 ,
-"choiceId" : "EXPOSE",
+"choiceId" : "SHARED_OBJECT",
 "numChoices" : 2,
-"currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
+"currentChoice" : "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
 "choices" : [
 "ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=RUNNING]"]
+"ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"]
 ,
 "steps" : [
 ]
@@ -142,7 +152,12 @@
 "numSteps" : 0,
 "instructions" : [
 ]
-}
+,
+"switchThread" : true,
+"prevTid" : 0,
+"prevThreadName" : "main",
+"nextTid" : 1,
+"nextThreadName" : "Thread-1"}
 ,
 {
 "transitionId" : 6,
@@ -152,12 +167,11 @@
 "threadEntryMethod" : "gov.nasa.jpf.util.test.TestJPF.runTestMethod([Ljava/lang/String;)V",
 "threadState" : "RUNNING"}
 ,
-"choiceId" : "LOCK",
-"numChoices" : 2,
+"choiceId" : "TERMINATE",
+"numChoices" : 1,
 "currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
 "choices" : [
-"ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=RUNNING]"]
+"ThreadInfo [name=main,id=0,state=RUNNING]"]
 ,
 "steps" : [
 ]
@@ -165,32 +179,14 @@
 "numSteps" : 0,
 "instructions" : [
 ]
-}
 ,
-{
-"transitionId" : 7,
-"threadInfo" : {
-"threadId" : 0,
-"threadName" : "main",
-"threadEntryMethod" : "gov.nasa.jpf.util.test.TestJPF.runTestMethod([Ljava/lang/String;)V",
-"threadState" : "RUNNING"}
-,
-"choiceId" : "EXPOSE",
-"numChoices" : 2,
-"currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
-"choices" : [
-"ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=RUNNING]"]
-,
-"steps" : [
-]
-,
-"numSteps" : 0,
-"instructions" : [
-]
-}
+"switchThread" : true,
+"prevTid" : 1,
+"prevThreadName" : "Thread-1",
+"nextTid" : 0,
+"nextThreadName" : "main"}
 ]
 ,
 "appName" : "fix-this!",
 "type" : "Java Path Finder Trace",
-"time" : "1591974386072"}
+"time" : "1591990011303"}

@@ -24,26 +24,8 @@ public class JsonOutputTest extends TestJPF {
             int c = 420 / racer.d;               // (4)
             System.out.println(c);
 
-            String testOutputPath = "./jsonOutput.json";
-            String sampleOutputPath = "./src/main/gov/nasa/jpf/resources/Racer.json.checked";
-        
-            File testOutput = new File(testOutputPath);
-            File sampleOutput = new File(sampleOutputPath);
-
-            try {
-                String testStr = FileUtils.getContentsAsString(testOutput);
-                String sampleStr = FileUtils.getContentsAsString(sampleOutput);
-
-                assert(testStr.contentEquals(sampleStr));
-
-                testOutput.delete();
-                sampleOutput.delete();
-                
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
         }
+
     }
 
     static class Racer implements Runnable {
@@ -72,7 +54,31 @@ public class JsonOutputTest extends TestJPF {
         }
     }
 
+    public static void compareCheckFile() {
+
+
+        String testOutputPath = "./jsonOutput.json";
+        String sampleOutputPath = "./src/main/gov/nasa/jpf/resources/Racer.json.checked";
+    
+        File testOutput = new File(testOutputPath);
+        File sampleOutput = new File(sampleOutputPath);
+
+        try {
+            String testStr = FileUtils.getContentsAsString(testOutput);
+            String sampleStr = FileUtils.getContentsAsString(sampleOutput);
+
+            assert(testStr.contentEquals(sampleStr));
+
+            testOutput.delete();
+            sampleOutput.delete();
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] testMethods) {
         runTestsOfThisClass(testMethods);
+        compareCheckFile();
     }
 }
