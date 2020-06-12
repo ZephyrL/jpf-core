@@ -12,7 +12,7 @@ public class JsonOutputTest extends TestJPF {
     
     @Test
     public void testJsonOutput() {
-        if (verifyAssertionError( // if verifyNoPropertyViolation(
+        if (verifyNoPropertyViolation( // if verifyAssertionError(
             "+listener=.listener.JsonTraceFormatter",
             "+report.console.property_violation=error,trace"
         )) {
