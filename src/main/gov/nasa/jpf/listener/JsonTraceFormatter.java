@@ -1,10 +1,15 @@
 package gov.nasa.jpf.listener;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 import gov.nasa.jpf.Config;
 import gov.nasa.jpf.Error;
 import gov.nasa.jpf.JPF;
 import gov.nasa.jpf.ListenerAdapter;
-import gov.nasa.jpf.annotation.JPFOption;
 import gov.nasa.jpf.jvm.bytecode.JVMFieldInstruction;
 import gov.nasa.jpf.jvm.bytecode.JVMInvokeInstruction;
 import gov.nasa.jpf.jvm.bytecode.JVMReturnInstruction;
@@ -13,25 +18,11 @@ import gov.nasa.jpf.search.Search;
 import gov.nasa.jpf.util.Left;
 import gov.nasa.jpf.util.Pair;
 import gov.nasa.jpf.vm.ChoiceGenerator;
-import gov.nasa.jpf.vm.ClassInfo;
-import gov.nasa.jpf.vm.ElementInfo;
 import gov.nasa.jpf.vm.Instruction;
-import gov.nasa.jpf.vm.VM;
-import gov.nasa.jpf.vm.MethodInfo;
 import gov.nasa.jpf.vm.Path;
 import gov.nasa.jpf.vm.Step;
 import gov.nasa.jpf.vm.ThreadInfo;
 import gov.nasa.jpf.vm.Transition;
-import gov.nasa.jpf.report.ConsolePublisher;
-import gov.nasa.jpf.report.Publisher;
-
-import java.io.FileOutputStream;
-import java.io.IOError;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Date;
 
 
 public class JsonTraceFormatter extends ListenerAdapter {
@@ -95,7 +86,7 @@ public class JsonTraceFormatter extends ListenerAdapter {
     private void writeTransition(JsonPrintWriter writer, Path path, int tranId) throws IOException {
 
         Transition tran = path.get(tranId);
-		ChoiceGenerator<?> testCg = tran.getChoiceGenerator();
+        ChoiceGenerator<?> testCg = tran.getChoiceGenerator();
 
 		writer.startBrace();
 
@@ -111,7 +102,7 @@ public class JsonTraceFormatter extends ListenerAdapter {
         ChoiceGenerator<?> cg = tran.getChoiceGenerator();
         writeChoiceGenerator(writer, cg);
     
-        // write steps
+        // write steps and instructions
         List<Pair<Integer, Step> > stepList = new ArrayList<>();
         writeSteps(writer, tran, stepList);
 

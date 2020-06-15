@@ -6,15 +6,18 @@ import java.io.IOException;
 import org.junit.Test;
 
 import gov.nasa.jpf.util.FileUtils;
+import gov.nasa.jpf.util.TypeRef;
 import gov.nasa.jpf.util.test.TestJPF;
 
 public class JsonOutputTest extends TestJPF {
+
+    static final TypeRef PROPERTY = new TypeRef("gov.nasa.jpf.vm.NoUncaughtExceptionsProperty");
     
     @Test
     public void testJsonOutput() {
-        if (verifyNoPropertyViolation( // if verifyAssertionError(
-            "+listener=.listener.JsonTraceFormatter",
-            "+report.console.property_violation=error,trace"
+        if (verifyPropertyViolation( PROPERTY,// if verifyAssertionError(
+            "+listener=.listener.JsonTraceFormatter"
+            ,"+report.console.property_violation=error,trace"
         )) {
             Racer racer = new Racer();
             Thread t = new Thread(racer);
@@ -56,7 +59,7 @@ public class JsonOutputTest extends TestJPF {
 
     public static void compareCheckFile() {
 
-
+        System.out.println("comparing file with the sample output...");
         String testOutputPath = "./jsonOutput.json";
         String sampleOutputPath = "./src/main/gov/nasa/jpf/resources/Racer.json.checked";
     
@@ -66,6 +69,9 @@ public class JsonOutputTest extends TestJPF {
         try {
             String testStr = FileUtils.getContentsAsString(testOutput);
             String sampleStr = FileUtils.getContentsAsString(sampleOutput);
+
+            // System.out.println("Test:" + testStr);
+            // System.out.println("Sample: " + sampleStr);
 
             assert(testStr.contentEquals(sampleStr));
 
