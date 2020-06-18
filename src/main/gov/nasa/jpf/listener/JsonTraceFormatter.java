@@ -4,6 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 
 import gov.nasa.jpf.Config;
@@ -39,7 +40,29 @@ public class JsonTraceFormatter extends ListenerAdapter {
         try (FileOutputStream fos = new FileOutputStream(outputFilePath)) {
             out = new JsonPrintWriter(fos, true);
 
-            // out.println("SearchFinish");
+            List<Error> errors = search.getErrors();
+            if (errors.size() >= 0) {
+                for (Error e : errors) {
+                    Path p = e.getPath();
+                    writePath(out, p);
+                }
+            }
+            out.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void propertyViolated(Search search) {
+        System.out.println("Property Violated");
+        JsonPrintWriter out;
+
+        String outputFilePath = "./propertyViolatedJsonOutput.json";
+        try (FileOutputStream fos = new FileOutputStream(outputFilePath)) {
+            out = new JsonPrintWriter(fos, true);
+
             List<Error> errors = search.getErrors();
             if (errors.size() >= 0) {
                 for (Error e : errors) {
@@ -78,7 +101,7 @@ public class JsonTraceFormatter extends ListenerAdapter {
 		writer.assign("type", "Java Path Finder Trace");
 		writer.delim();
 
-        writer.assign("time", String.valueOf(new Date().getTime()));
+        writer.assign("time", String.valueOf(new Date().getTime() * 1000));
         
 		writer.endBrace();
     }
@@ -101,60 +124,70 @@ public class JsonTraceFormatter extends ListenerAdapter {
         // write choice generator (without brace)
         ChoiceGenerator<?> cg = tran.getChoiceGenerator();
         writeChoiceGenerator(writer, cg);
+        writer.delim();
     
         // write steps and instructions
-        List<Pair<Integer, Step> > stepList = new ArrayList<>();
-        writeSteps(writer, tran, stepList);
+        // List<Pair<Integer, Step> > stepList = new ArrayList<>();
+        writer.assign("steps");
+        writer.startBracket();
 
-        writeInstructions(writer, stepList);
+        boolean firstElementWritten = false;
 
-        // --- write lttng-alike context ---
-        
         // awake
 		if (testCg.getId().equals("START") || testCg.getId().equals("JOIN")) {
-			writer.delim();
 			ThreadInfo next = path.get(testCg.getTotalNumberOfChoices() - 1).getThreadInfo();
+
+            writer.startBrace();
+
+            writer.assign("threadAwake", true);
+            writer.delim();
 
 			writer.assign("currentThreadName", next.getName()); // last choice
 			writer.delim();
 
-			writer.assign("tid", next.getId());
+            writer.assign("tid", next.getId());
+
+            writer.endBrace();
+
+            firstElementWritten = true;
 		}
 
         // switch
-		if (tranId > 0) {
-			Transition prevTran = path.get(tranId - 1);
-
-			int thisTid = tran.getThreadInfo().getId();
-			int prevTid = prevTran.getThreadInfo().getId();
-
-			if (thisTid == prevTid) {
-                writer.endBrace();
-                return;
-			}
-        }
-        
-        writer.delim();
         Transition prevTran = tranId > 0 ? path.get(tranId - 1) : path.get(tranId);
 
         int thisTid = tran.getThreadInfo().getId();
         int prevTid = prevTran.getThreadInfo().getId();
 
-        writer.assign("switchThread", true);
-        writer.delim();
+        if (tranId == 0 || thisTid != prevTid) {
 
-        writer.assign("prevTid", prevTid);
-        writer.delim();
+            writer.startBrace();
 
-        writer.assign("prevThreadName", prevTran.getThreadInfo().getName());
-        writer.delim();
+            writer.assign("threadSwitch", true);
+            writer.delim();
 
-        writer.assign("nextTid", thisTid);
-        writer.delim();
+            writer.assign("prevTid", prevTid);
+            writer.delim();
 
-        writer.assign("nextThreadName", tran.getThreadInfo().getName());
+            writer.assign("prevThreadName", prevTran.getThreadInfo().getName());
+            writer.delim();
 
-		writer.endBrace();
+            writer.assign("nextTid", thisTid);
+            writer.delim();
+
+            writer.assign("nextThreadName", tran.getThreadInfo().getName());
+
+            writer.endBrace();
+
+            firstElementWritten = true;
+        }
+
+        writeSteps(writer, tran, firstElementWritten);
+
+        writer.endBracket();
+
+        writer.endBrace();
+
+        // writeInstructions(writer, stepList);
 
     }
 
@@ -180,6 +213,9 @@ public class JsonTraceFormatter extends ListenerAdapter {
     
     private void writeChoiceGenerator(JsonPrintWriter writer, ChoiceGenerator<?> cg) throws IOException {
 
+        writer.assign("choiceInfo");
+        writer.startBrace();
+
         writer.assign("choiceId", cg.getId());
         writer.delim();
 
@@ -200,26 +236,21 @@ public class JsonTraceFormatter extends ListenerAdapter {
         }
 
         writer.endBracket();
-        writer.delim();
+
+        writer.endBrace();
     }
 
-    private void writeSteps(JsonPrintWriter writer, Transition tran, List<Pair<Integer, Step>> stepList) throws IOException {
-        
-		Integer numStep = tran.getStepCount();
-
+    private void writeSteps(JsonPrintWriter writer, Transition tran, boolean firstElementWritten) throws IOException {
 		// write steps
-		writer.assign("steps");
-		writer.startBracket();
 
 		String lastLine = "";
 		int nNoSrc = 0;
-		boolean firstLine = true;
-		int textHeight = 0;		
-        
+        int textHeight = 0;	
 
+        Iterator<Step> iter = tran.iterator();
 		// for each step of transition
-		for (int si = 0; si < numStep; si++) {
-			Step s = tran.getStep(si);
+		while (iter.hasNext()){
+			Step s = iter.next();
 			// writeStep(writer, s);
 
 			String line = s.getLineString();
@@ -227,24 +258,33 @@ public class JsonTraceFormatter extends ListenerAdapter {
 				String src = safeString(line);
 
 				if (!line.equals(lastLine) && src.length() > 0) {					
-					if (firstLine){
-						firstLine = false;
-					} else {
-						writer.delim();
-					}
+					if (firstElementWritten) {
+                        writer.delim();
+                    } else {
+                        firstElementWritten = true;
+                    }
+
+                    writer.startBrace();
 
 					if (nNoSrc > 0) {
 						String noSrc = " [" + nNoSrc + " insn w/o sources]";
 						// tempStr.append(noSrc + "\n");
-						writer.writeString(noSrc);
-						writer.delim();
+                        writer.assign("noSrc", noSrc);
+                        writer.delim();
 
 						textHeight++;
-					}
+                    }
+                    
 
-					writer.writeString(" " + Left.format(s.getLocationString(), 20) + ": " + src);
+                    writer.assign("src", " " + Left.format(s.getLocationString(), 20) + ": " + src);
+                    writer.delim();
+                        
+                    Instruction insn = s.getInstruction();
+                    writeInstruction(writer, insn, textHeight);
 
-					stepList.add(new Pair<>(textHeight, s));
+                    writer.endBrace();
+
+					// stepList.add(new Pair<>(textHeight, s));
 
 					textHeight++;
 
@@ -256,11 +296,6 @@ public class JsonTraceFormatter extends ListenerAdapter {
 			}
 			lastLine = line;
 		}
-		writer.endBracket();
-		writer.delim();
-
-		writer.assign("numSteps", textHeight);
-		writer.delim();
     }
 
     private void writeInstructions(JsonPrintWriter writer, List<Pair<Integer, Step>> stepList) throws IOException {
@@ -284,7 +319,7 @@ public class JsonTraceFormatter extends ListenerAdapter {
 
     private void writeInstruction(JsonPrintWriter writer, Instruction insn, int height) throws IOException  
 	{
-        writer.startBrace();
+        // writer.startBrace();
         
         String src = insn.getSourceLine();
 
@@ -300,7 +335,7 @@ public class JsonTraceFormatter extends ListenerAdapter {
 
 		writer.assign("fileLocation", insn.getFileLocation());
 
-		writer.endBrace();
+		// writer.endBrace();
     }
     
     private void checkMethodCall(JsonPrintWriter writer, Instruction insn, String src) throws IOException {
