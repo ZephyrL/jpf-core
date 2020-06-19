@@ -2,7 +2,6 @@ package gov.nasa.jpf.listener;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
@@ -275,22 +274,19 @@ public class JsonTraceFormatter extends ListenerAdapter {
 						textHeight++;
                     }
                     
-
-                    writer.assign("src", " " + Left.format(s.getLocationString(), 20) + ": " + src);
-                    writer.delim();
-                        
                     Instruction insn = s.getInstruction();
                     writeInstruction(writer, insn, textHeight);
 
-                    writer.endBrace();
+                    writer.assign("src", " " + Left.format(s.getLocationString(), 20) + ": " + src);                        
 
-					// stepList.add(new Pair<>(textHeight, s));
+                    writer.endBrace();
 
 					textHeight++;
 
 					nNoSrc = 0;
 				}
-			} else { // no source
+			} else { 
+                // increase the counter for non-source instructions
 				// what could be retrieved from insn without source?
 				nNoSrc++;
 			}
@@ -298,29 +294,8 @@ public class JsonTraceFormatter extends ListenerAdapter {
 		}
     }
 
-    private void writeInstructions(JsonPrintWriter writer, List<Pair<Integer, Step>> stepList) throws IOException {
-		writer.assign("instructions");
-		writer.startBracket();
-		for (int si = 0; si < stepList.size(); si++ ) {
-
-			Pair<Integer,Step> pair = stepList.get(si);
-			Integer height = pair._1;
-			Step s = pair._2;
-
-			Instruction insn = s.getInstruction();
-			writeInstruction(writer, insn, height);
-
-			if (si != stepList.size() - 1) {
-				 writer.delim();
-			}
-		}
-		writer.endBracket();
-    }
-
     private void writeInstruction(JsonPrintWriter writer, Instruction insn, int height) throws IOException  
 	{
-        // writer.startBrace();
-        
         String src = insn.getSourceLine();
 
         checkLockUnlock(writer, insn, src);   
@@ -328,14 +303,6 @@ public class JsonTraceFormatter extends ListenerAdapter {
         checkMethodCall(writer, insn, src);
 
         checkFieldAccess(writer, insn, src);
-
-
-		writer.assign("stepLocation", height);
-		writer.delim();
-
-		writer.assign("fileLocation", insn.getFileLocation());
-
-		// writer.endBrace();
     }
     
     private void checkMethodCall(JsonPrintWriter writer, Instruction insn, String src) throws IOException {
