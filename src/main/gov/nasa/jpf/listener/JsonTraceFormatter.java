@@ -27,12 +27,19 @@ import gov.nasa.jpf.vm.Transition;
 
 public class JsonTraceFormatter extends ListenerAdapter {
 
+    private static int sStepCounter;
+
     public JsonTraceFormatter (Config config, JPF jpf) {        
+    }
+
+    private static void resetCounter() {
+        sStepCounter = 0;
     }
 
     @Override 
     public void searchFinished(Search search) {
 
+        resetCounter();
         JsonPrintWriter out;
 
         String outputFilePath = "./jsonOutput.json";
@@ -136,7 +143,10 @@ public class JsonTraceFormatter extends ListenerAdapter {
 		if (testCg.getId().equals("START") || testCg.getId().equals("JOIN")) {
 			ThreadInfo next = path.get(testCg.getTotalNumberOfChoices() - 1).getThreadInfo();
 
-            writer.startBrace();
+            writer.startBrace();       
+            
+            writer.assign("id", sStepCounter++);
+            writer.delim();
 
             writer.assign("threadAwake", true);
             writer.delim();
@@ -160,6 +170,9 @@ public class JsonTraceFormatter extends ListenerAdapter {
         if (tranId == 0 || thisTid != prevTid) {
 
             writer.startBrace();
+
+            writer.assign("id", sStepCounter++);
+            writer.delim();
 
             writer.assign("threadSwitch", true);
             writer.delim();
@@ -194,7 +207,10 @@ public class JsonTraceFormatter extends ListenerAdapter {
 
 		writer.assign("threadInfo");
 
-		writer.startBrace();
+        writer.startBrace();
+        
+        writer.assign("id", sStepCounter++);
+        writer.delim();
 
 		writer.assign("threadId", ti.getId());
 		writer.delim();
@@ -214,6 +230,9 @@ public class JsonTraceFormatter extends ListenerAdapter {
 
         writer.assign("choiceInfo");
         writer.startBrace();
+
+        writer.assign("id", sStepCounter++);
+        writer.delim();
 
         writer.assign("choiceId", cg.getId());
         writer.delim();
@@ -264,6 +283,9 @@ public class JsonTraceFormatter extends ListenerAdapter {
                     }
 
                     writer.startBrace();
+
+                    writer.assign("id", sStepCounter++);
+                    writer.delim();
 
 					if (nNoSrc > 0) {
 						String noSrc = " [" + nNoSrc + " insn w/o sources]";
