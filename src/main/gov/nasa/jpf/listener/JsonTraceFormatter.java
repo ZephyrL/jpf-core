@@ -16,7 +16,6 @@ import gov.nasa.jpf.jvm.bytecode.JVMReturnInstruction;
 import gov.nasa.jpf.jvm.bytecode.JVMStaticFieldInstruction;
 import gov.nasa.jpf.search.Search;
 import gov.nasa.jpf.util.Left;
-import gov.nasa.jpf.util.Pair;
 import gov.nasa.jpf.vm.ChoiceGenerator;
 import gov.nasa.jpf.vm.Instruction;
 import gov.nasa.jpf.vm.Path;
@@ -115,7 +114,6 @@ public class JsonTraceFormatter extends ListenerAdapter {
     private void writeTransition(JsonPrintWriter writer, Path path, int tranId) throws IOException {
 
         Transition tran = path.get(tranId);
-        ChoiceGenerator<?> testCg = tran.getChoiceGenerator();
 
 		writer.startBrace();
 
@@ -123,8 +121,7 @@ public class JsonTraceFormatter extends ListenerAdapter {
 		writer.delim();
 		
 		// writer thread info (with brace)
-        ThreadInfo tInfo = tran.getThreadInfo();
-        writeThreadInfo(writer, tInfo);
+        writeThreadInfo(writer, path, tranId);
         writer.delim();
 
         // write choice generator (without brace)
@@ -137,63 +134,7 @@ public class JsonTraceFormatter extends ListenerAdapter {
         writer.assign("steps");
         writer.startBracket();
 
-        boolean firstElementWritten = false;
-
-        // awake
-		if (testCg.getId().equals("START") || testCg.getId().equals("JOIN")) {
-			ThreadInfo next = path.get(testCg.getTotalNumberOfChoices() - 1).getThreadInfo();
-
-            writer.startBrace();       
-            
-            writer.assign("id", sStepCounter++);
-            writer.delim();
-
-            writer.assign("threadAwake", true);
-            writer.delim();
-
-			writer.assign("currentThreadName", next.getName()); // last choice
-			writer.delim();
-
-            writer.assign("tid", next.getId());
-
-            writer.endBrace();
-
-            firstElementWritten = true;
-		}
-
-        // switch
-        Transition prevTran = tranId > 0 ? path.get(tranId - 1) : path.get(tranId);
-
-        int thisTid = tran.getThreadInfo().getId();
-        int prevTid = prevTran.getThreadInfo().getId();
-
-        if (tranId == 0 || thisTid != prevTid) {
-
-            writer.startBrace();
-
-            writer.assign("id", sStepCounter++);
-            writer.delim();
-
-            writer.assign("threadSwitch", true);
-            writer.delim();
-
-            writer.assign("prevTid", prevTid);
-            writer.delim();
-
-            writer.assign("prevThreadName", prevTran.getThreadInfo().getName());
-            writer.delim();
-
-            writer.assign("nextTid", thisTid);
-            writer.delim();
-
-            writer.assign("nextThreadName", tran.getThreadInfo().getName());
-
-            writer.endBrace();
-
-            firstElementWritten = true;
-        }
-
-        writeSteps(writer, tran, firstElementWritten);
+        writeSteps(writer, tran);
 
         writer.endBracket();
 
@@ -203,7 +144,12 @@ public class JsonTraceFormatter extends ListenerAdapter {
 
     }
 
-	private void writeThreadInfo(JsonPrintWriter writer, ThreadInfo ti) throws IOException {
+	private void writeThreadInfo(JsonPrintWriter writer, Path path, int tranId) throws IOException {
+
+
+        Transition tran = path.get(tranId);
+        ThreadInfo ti = tran.getThreadInfo();
+        ChoiceGenerator<?> testCg = tran.getChoiceGenerator();
 
 		writer.assign("threadInfo");
 
@@ -222,6 +168,47 @@ public class JsonTraceFormatter extends ListenerAdapter {
         writer.delim();
 
         writer.assign("threadState", ti.getStateName());
+
+
+        // awake
+		if (testCg.getId().equals("START") || testCg.getId().equals("JOIN")) {
+			ThreadInfo next = path.get(testCg.getTotalNumberOfChoices() - 1).getThreadInfo();
+
+            writer.delim();
+
+            writer.assign("threadAwake", true);
+            writer.delim();
+
+			writer.assign("currentThreadName", next.getName()); // last choice
+			writer.delim();
+
+            writer.assign("tid", next.getId());
+		}
+
+        // switch
+        Transition prevTran = tranId > 0 ? path.get(tranId - 1) : path.get(tranId);
+
+        int thisTid = tran.getThreadInfo().getId();
+        int prevTid = prevTran.getThreadInfo().getId();
+
+        if (tranId == 0 || thisTid != prevTid) {
+
+            writer.delim();
+            
+            writer.assign("threadSwitch", true);
+            writer.delim();
+
+            writer.assign("prevTid", prevTid);
+            writer.delim();
+
+            writer.assign("prevThreadName", prevTran.getThreadInfo().getName());
+            writer.delim();
+
+            writer.assign("nextTid", thisTid);
+            writer.delim();
+
+            writer.assign("nextThreadName", tran.getThreadInfo().getName());
+        }
 
 		writer.endBrace();
     }
@@ -258,12 +245,13 @@ public class JsonTraceFormatter extends ListenerAdapter {
         writer.endBrace();
     }
 
-    private void writeSteps(JsonPrintWriter writer, Transition tran, boolean firstElementWritten) throws IOException {
+    private void writeSteps(JsonPrintWriter writer, Transition tran) throws IOException {
 		// write steps
 
 		String lastLine = "";
 		int nNoSrc = 0;
         int textHeight = 0;	
+        boolean firstElementWritten = false;
 
         Iterator<Step> iter = tran.iterator();
 		// for each step of transition

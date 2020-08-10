@@ -1,337 +1,320 @@
 {
-"transitions" : [
-{
-"transitionId" : 0,
-"threadInfo" : {
-"id" : 0,
-"threadId" : 0,
-"threadName" : "main",
-"threadEntryMethod" : "Racer.main([Ljava/lang/String;)V",
-"threadState" : "RUNNING"}
-,
-"choiceInfo" : {
-"id" : 1,
-"choiceId" : "ROOT",
-"numChoices" : 1,
-"currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
-"choices" : [
-"ThreadInfo [name=main,id=0,state=RUNNING]"]
+    "transitions": [
+        {
+            "transitionId": 0,
+            "threadInfo": {
+                "id": 0,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "Racer.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 0,
+                "nextThreadName": "main"
+            },
+            "choiceInfo": {
+                "id": 1,
+                "choiceId": "ROOT",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 2,
+                    "noSrc": " [3168 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.main([Ljava/lang/String;)V",
+                    "src": " Racer.java:30       : Racer racer = new Racer();"
+                },
+                {
+                    "id": 3,
+                    "src": " Racer.java:19       : public class Racer implements Runnable {"
+                },
+                {
+                    "id": 4,
+                    "noSrc": " [1 insn w/o sources]",
+                    "src": " Racer.java:21       : int d = 42;"
+                },
+                {
+                    "id": 5,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.main([Ljava/lang/String;)V",
+                    "src": " Racer.java:30       : Racer racer = new Racer();"
+                },
+                {
+                    "id": 6,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.main([Ljava/lang/String;)V",
+                    "src": " Racer.java:31       : Thread t = new Thread(racer);"
+                },
+                {
+                    "id": 7,
+                    "noSrc": " [145 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.main([Ljava/lang/String;)V",
+                    "src": " Racer.java:31       : Thread t = new Thread(racer);"
+                },
+                {
+                    "id": 8,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.main([Ljava/lang/String;)V",
+                    "src": " Racer.java:32       : t.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 1,
+            "threadInfo": {
+                "id": 9,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "Racer.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 0
+            },
+            "choiceInfo": {
+                "id": 10,
+                "choiceId": "START",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 11,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.main([Ljava/lang/String;)V",
+                    "src": " Racer.java:34       : doSomething(1000);"
+                },
+                {
+                    "id": 12,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.doSomething(I)V",
+                    "src": " Racer.java:41       : try { Thread.sleep(n); } catch (InterruptedException ix) {}"
+                }
+            ]
+        },
+        {
+            "transitionId": 2,
+            "threadInfo": {
+                "id": 13,
+                "threadId": 1,
+                "threadName": "Thread-1",
+                "threadEntryMethod": "Racer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 1,
+                "nextThreadName": "Thread-1"
+            },
+            "choiceInfo": {
+                "id": 14,
+                "choiceId": "SLEEP",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 15,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.run()V",
+                    "src": " Racer.java:25       : doSomething(1001);"
+                },
+                {
+                    "id": 16,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.doSomething(I)V",
+                    "src": " Racer.java:41       : try { Thread.sleep(n); } catch (InterruptedException ix) {}"
+                }
+            ]
+        },
+        {
+            "transitionId": 3,
+            "threadInfo": {
+                "id": 17,
+                "threadId": 1,
+                "threadName": "Thread-1",
+                "threadEntryMethod": "Racer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 18,
+                "choiceId": "SLEEP",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 19,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.doSomething(I)V",
+                    "src": " Racer.java:41       : try { Thread.sleep(n); } catch (InterruptedException ix) {}"
+                },
+                {
+                    "id": 20,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.doSomething(I)V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Racer.doSomething(I)V",
+                    "src": " Racer.java:42       : }"
+                },
+                {
+                    "id": 21,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.run()V",
+                    "src": " Racer.java:26       : d = 0;"
+                }
+            ]
+        },
+        {
+            "transitionId": 4,
+            "threadInfo": {
+                "id": 22,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "Racer.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 1,
+                "prevThreadName": "Thread-1",
+                "nextTid": 0,
+                "nextThreadName": "main"
+            },
+            "choiceInfo": {
+                "id": 23,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 24,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.doSomething(I)V",
+                    "src": " Racer.java:41       : try { Thread.sleep(n); } catch (InterruptedException ix) {}"
+                },
+                {
+                    "id": 25,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.doSomething(I)V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Racer.doSomething(I)V",
+                    "src": " Racer.java:42       : }"
+                },
+                {
+                    "id": 26,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.main([Ljava/lang/String;)V",
+                    "src": " Racer.java:35       : int c = 420 / racer.d;"
+                }
+            ]
+        },
+        {
+            "transitionId": 5,
+            "threadInfo": {
+                "id": 27,
+                "threadId": 1,
+                "threadName": "Thread-1",
+                "threadEntryMethod": "Racer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 1,
+                "nextThreadName": "Thread-1"
+            },
+            "choiceInfo": {
+                "id": 28,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 29,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Racer.d",
+                    "src": " Racer.java:26       : d = 0;"
+                },
+                {
+                    "id": 30,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.run()V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Racer.run()V",
+                    "src": " Racer.java:27       : }"
+                }
+            ]
+        },
+        {
+            "transitionId": 6,
+            "threadInfo": {
+                "id": 31,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "Racer.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 1,
+                "prevThreadName": "Thread-1",
+                "nextTid": 0,
+                "nextThreadName": "main"
+            },
+            "choiceInfo": {
+                "id": 32,
+                "choiceId": "TERMINATE",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 33,
+                    "isSynchronized": true,
+                    "syncMethodName": "Racer.main([Ljava/lang/String;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Racer.d",
+                    "src": " Racer.java:35       : int c = 420 / racer.d;"
+                }
+            ]
+        }
+    ],
+    "appName": "fix-this!",
+    "type": "Java Path Finder Trace",
+    "time": "1597068004029000"
 }
-,
-"steps" : [
-{
-"id" : 2,
-"threadSwitch" : true,
-"prevTid" : 0,
-"prevThreadName" : "main",
-"nextTid" : 0,
-"nextThreadName" : "main"}
-,
-{
-"id" : 3,
-"noSrc" : " [3168 insn w/o sources]",
-"isSynchronized" : true,
-"syncMethodName" : "Racer.main([Ljava/lang/String;)V",
-"src" : " Racer.java:30       : Racer racer = new Racer();"}
-,
-{
-"id" : 4,
-"src" : " Racer.java:19       : public class Racer implements Runnable {"}
-,
-{
-"id" : 5,
-"noSrc" : " [1 insn w/o sources]",
-"src" : " Racer.java:21       : int d = 42;"}
-,
-{
-"id" : 6,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.main([Ljava/lang/String;)V",
-"src" : " Racer.java:30       : Racer racer = new Racer();"}
-,
-{
-"id" : 7,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.main([Ljava/lang/String;)V",
-"src" : " Racer.java:31       : Thread t = new Thread(racer);"}
-,
-{
-"id" : 8,
-"noSrc" : " [145 insn w/o sources]",
-"isSynchronized" : true,
-"syncMethodName" : "Racer.main([Ljava/lang/String;)V",
-"src" : " Racer.java:31       : Thread t = new Thread(racer);"}
-,
-{
-"id" : 9,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.main([Ljava/lang/String;)V",
-"src" : " Racer.java:32       : t.start();"}
-]
-}
-,
-{
-"transitionId" : 1,
-"threadInfo" : {
-"id" : 10,
-"threadId" : 0,
-"threadName" : "main",
-"threadEntryMethod" : "Racer.main([Ljava/lang/String;)V",
-"threadState" : "RUNNING"}
-,
-"choiceInfo" : {
-"id" : 11,
-"choiceId" : "START",
-"numChoices" : 2,
-"currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
-"choices" : [
-"ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"]
-}
-,
-"steps" : [
-{
-"id" : 12,
-"threadAwake" : true,
-"currentThreadName" : "main",
-"tid" : 0}
-,
-{
-"id" : 13,
-"noSrc" : " [2 insn w/o sources]",
-"isSynchronized" : true,
-"syncMethodName" : "Racer.main([Ljava/lang/String;)V",
-"src" : " Racer.java:34       : doSomething(1000);"}
-,
-{
-"id" : 14,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.doSomething(I)V",
-"src" : " Racer.java:41       : try { Thread.sleep(n); } catch (InterruptedException ix) {}"}
-]
-}
-,
-{
-"transitionId" : 2,
-"threadInfo" : {
-"id" : 15,
-"threadId" : 1,
-"threadName" : "Thread-1",
-"threadEntryMethod" : "Racer.main([Ljava/lang/String;)V",
-"threadState" : "TERMINATED"}
-,
-"choiceInfo" : {
-"id" : 16,
-"choiceId" : "SLEEP",
-"numChoices" : 2,
-"currentChoice" : "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
-"choices" : [
-"ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"]
-}
-,
-"steps" : [
-{
-"id" : 17,
-"threadSwitch" : true,
-"prevTid" : 0,
-"prevThreadName" : "main",
-"nextTid" : 1,
-"nextThreadName" : "Thread-1"}
-,
-{
-"id" : 18,
-"noSrc" : " [1 insn w/o sources]",
-"isSynchronized" : true,
-"syncMethodName" : "Racer.run()V",
-"src" : " Racer.java:25       : doSomething(1001);"}
-,
-{
-"id" : 19,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.doSomething(I)V",
-"src" : " Racer.java:41       : try { Thread.sleep(n); } catch (InterruptedException ix) {}"}
-]
-}
-,
-{
-"transitionId" : 3,
-"threadInfo" : {
-"id" : 20,
-"threadId" : 1,
-"threadName" : "Thread-1",
-"threadEntryMethod" : "Racer.main([Ljava/lang/String;)V",
-"threadState" : "TERMINATED"}
-,
-"choiceInfo" : {
-"id" : 21,
-"choiceId" : "SLEEP",
-"numChoices" : 2,
-"currentChoice" : "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
-"choices" : [
-"ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"]
-}
-,
-"steps" : [
-{
-"id" : 22,
-"noSrc" : " [3 insn w/o sources]",
-"isSynchronized" : true,
-"syncMethodName" : "Racer.doSomething(I)V",
-"src" : " Racer.java:41       : try { Thread.sleep(n); } catch (InterruptedException ix) {}"}
-,
-{
-"id" : 23,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.doSomething(I)V",
-"isMethodReturn" : true,
-"returndMethodName" : "Racer.doSomething(I)V",
-"src" : " Racer.java:42       : }"}
-,
-{
-"id" : 24,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.run()V",
-"src" : " Racer.java:26       : d = 0;"}
-]
-}
-,
-{
-"transitionId" : 4,
-"threadInfo" : {
-"id" : 25,
-"threadId" : 0,
-"threadName" : "main",
-"threadEntryMethod" : "Racer.main([Ljava/lang/String;)V",
-"threadState" : "RUNNING"}
-,
-"choiceInfo" : {
-"id" : 26,
-"choiceId" : "SHARED_OBJECT",
-"numChoices" : 2,
-"currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
-"choices" : [
-"ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"]
-}
-,
-"steps" : [
-{
-"id" : 27,
-"threadSwitch" : true,
-"prevTid" : 1,
-"prevThreadName" : "Thread-1",
-"nextTid" : 0,
-"nextThreadName" : "main"}
-,
-{
-"id" : 28,
-"noSrc" : " [3 insn w/o sources]",
-"isSynchronized" : true,
-"syncMethodName" : "Racer.doSomething(I)V",
-"src" : " Racer.java:41       : try { Thread.sleep(n); } catch (InterruptedException ix) {}"}
-,
-{
-"id" : 29,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.doSomething(I)V",
-"isMethodReturn" : true,
-"returndMethodName" : "Racer.doSomething(I)V",
-"src" : " Racer.java:42       : }"}
-,
-{
-"id" : 30,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.main([Ljava/lang/String;)V",
-"src" : " Racer.java:35       : int c = 420 / racer.d;"}
-]
-}
-,
-{
-"transitionId" : 5,
-"threadInfo" : {
-"id" : 31,
-"threadId" : 1,
-"threadName" : "Thread-1",
-"threadEntryMethod" : "Racer.main([Ljava/lang/String;)V",
-"threadState" : "TERMINATED"}
-,
-"choiceInfo" : {
-"id" : 32,
-"choiceId" : "SHARED_OBJECT",
-"numChoices" : 2,
-"currentChoice" : "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
-"choices" : [
-"ThreadInfo [name=main,id=0,state=RUNNING]",
-"ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"]
-}
-,
-"steps" : [
-{
-"id" : 33,
-"threadSwitch" : true,
-"prevTid" : 0,
-"prevThreadName" : "main",
-"nextTid" : 1,
-"nextThreadName" : "Thread-1"}
-,
-{
-"id" : 34,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.run()V",
-"isFieldAccess" : true,
-"accessedField" : "Racer.d",
-"src" : " Racer.java:26       : d = 0;"}
-,
-{
-"id" : 35,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.run()V",
-"isMethodReturn" : true,
-"returndMethodName" : "Racer.run()V",
-"src" : " Racer.java:27       : }"}
-]
-}
-,
-{
-"transitionId" : 6,
-"threadInfo" : {
-"id" : 36,
-"threadId" : 0,
-"threadName" : "main",
-"threadEntryMethod" : "Racer.main([Ljava/lang/String;)V",
-"threadState" : "RUNNING"}
-,
-"choiceInfo" : {
-"id" : 37,
-"choiceId" : "TERMINATE",
-"numChoices" : 1,
-"currentChoice" : "ThreadInfo [name=main,id=0,state=RUNNING]",
-"choices" : [
-"ThreadInfo [name=main,id=0,state=RUNNING]"]
-}
-,
-"steps" : [
-{
-"id" : 38,
-"threadSwitch" : true,
-"prevTid" : 1,
-"prevThreadName" : "Thread-1",
-"nextTid" : 0,
-"nextThreadName" : "main"}
-,
-{
-"id" : 39,
-"isSynchronized" : true,
-"syncMethodName" : "Racer.main([Ljava/lang/String;)V",
-"isFieldAccess" : true,
-"accessedField" : "Racer.d",
-"src" : " Racer.java:35       : int c = 420 / racer.d;"}
-]
-}
-]
-,
-"appName" : "fix-this!",
-"type" : "Java Path Finder Trace",
-"time" : "1592763004159000"}
