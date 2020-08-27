@@ -1,0 +1,8 @@
+target = DiningPhil
+
+search.class = .search.heuristic.BFSHeuristic
+
+listener=gov.nasa.jpf.listener.JsonTraceFormatter
+
+report.console.property_violation=error,trace
+
