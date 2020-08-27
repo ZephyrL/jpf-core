@@ -27,12 +27,14 @@ import gov.nasa.jpf.vm.Transition;
 public class JsonTraceFormatter extends ListenerAdapter {
 
     private static int sStepCounter;
+    private static int sThreadStartCounter;
 
     public JsonTraceFormatter (Config config, JPF jpf) {        
     }
 
     private static void resetCounter() {
         sStepCounter = 0;
+        sThreadStartCounter = 0;
     }
 
     @Override 
@@ -182,7 +184,7 @@ public class JsonTraceFormatter extends ListenerAdapter {
 			writer.assign("currentThreadName", next.getName()); // last choice
 			writer.delim();
 
-            writer.assign("tid", next.getId());
+            writer.assign("tid", ++sThreadStartCounter);
 		}
 
         // switch
