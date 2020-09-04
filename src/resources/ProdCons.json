@@ -1,0 +1,1351 @@
+{
+    "transitions": [
+        {
+            "transitionId": 0,
+            "threadInfo": {
+                "id": 0,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 0,
+                "nextThreadName": "main"
+            },
+            "choiceInfo": {
+                "id": 1,
+                "choiceId": "ROOT",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 2,
+                    "noSrc": " [3168 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:39    : q = new Queue(Q_SIZE);"
+                },
+                {
+                    "id": 3,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.<clinit>()V",
+                    "src": " Queue.java:2        : public class Queue {"
+                },
+                {
+                    "id": 4,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.<clinit>()V",
+                    "src": " Queue.java:2        : public class Queue {"
+                },
+                {
+                    "id": 5,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:39    : q = new Queue(Q_SIZE);"
+                },
+                {
+                    "id": 6,
+                    "src": " Queue.java:8        : public Queue(int size) {"
+                },
+                {
+                    "id": 7,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.$assertionsDisabled",
+                    "src": " Queue.java:9        : assert (size <= Integer.MAX_VALUE / 2);"
+                },
+                {
+                    "id": 8,
+                    "src": " Queue.java:10       : data = new byte[size];"
+                },
+                {
+                    "id": 9,
+                    "src": " Queue.java:11       : this.size = size;"
+                },
+                {
+                    "id": 10,
+                    "src": " Queue.java:12       : p = 0;"
+                },
+                {
+                    "id": 11,
+                    "src": " Queue.java:13       : c = 0;"
+                },
+                {
+                    "id": 12,
+                    "isMethodReturn": true,
+                    "returndMethodName": "Queue.<init>(I)V",
+                    "src": " Queue.java:14       : }"
+                },
+                {
+                    "id": 13,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "ProdCons.q",
+                    "src": " ProdCons.java:39    : q = new Queue(Q_SIZE);"
+                },
+                {
+                    "id": 14,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:40    : for (int i = 0; i < N; i++) {"
+                },
+                {
+                    "id": 15,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:41    : new Producer(i).start();"
+                },
+                {
+                    "id": 16,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Producer.<clinit>()V",
+                    "src": " ProdCons.java:12    : static int nameId = 0;"
+                },
+                {
+                    "id": 17,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:41    : new Producer(i).start();"
+                },
+                {
+                    "id": 18,
+                    "src": " ProdCons.java:14    : Producer(int i) {"
+                },
+                {
+                    "id": 19,
+                    "noSrc": " [145 insn w/o sources]",
+                    "src": " ProdCons.java:15    : data = new byte[]{(byte)i, (byte)(i + DELTA)};"
+                },
+                {
+                    "id": 20,
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 21,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isFieldAccess": true,
+                    "accessedField": "ProdCons$Producer.nameId",
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 22,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 23,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 24,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Producer.ProdCons$Producer",
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 25,
+                    "noSrc": " [11 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "ProdCons$Producer.<init>(I)V",
+                    "src": " ProdCons.java:17    : }"
+                },
+                {
+                    "id": 26,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Producer.ProdCons$Producer",
+                    "src": " ProdCons.java:41    : new Producer(i).start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 1,
+            "threadInfo": {
+                "id": 27,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 1
+            },
+            "choiceInfo": {
+                "id": 28,
+                "choiceId": "START",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 29,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:42    : new Consumer().start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 2,
+            "threadInfo": {
+                "id": 30,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 31,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 32,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Consumer.<clinit>()V",
+                    "src": " ProdCons.java:24    : static class Consumer extends Thread {"
+                },
+                {
+                    "id": 33,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Consumer.<clinit>()V",
+                    "src": " ProdCons.java:24    : static class Consumer extends Thread {"
+                },
+                {
+                    "id": 34,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Consumer.<clinit>()V",
+                    "src": " ProdCons.java:25    : static int nameId = 0;"
+                },
+                {
+                    "id": 35,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:42    : new Consumer().start();"
+                },
+                {
+                    "id": 36,
+                    "src": " ProdCons.java:26    : public Consumer () {"
+                }
+            ]
+        },
+        {
+            "transitionId": 3,
+            "threadInfo": {
+                "id": 37,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 38,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 39,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 40,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isFieldAccess": true,
+                    "accessedField": "ProdCons$Consumer.nameId",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 41,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 42,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 43,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Consumer.ProdCons$Consumer",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                }
+            ]
+        },
+        {
+            "transitionId": 4,
+            "threadInfo": {
+                "id": 44,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 45,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 46,
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Consumer.ProdCons$Consumer",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                }
+            ]
+        },
+        {
+            "transitionId": 5,
+            "threadInfo": {
+                "id": 47,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 48,
+                "choiceId": "EXPOSE",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 49,
+                    "noSrc": " [7 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "ProdCons$Consumer.<init>()V",
+                    "src": " ProdCons.java:28    : }"
+                },
+                {
+                    "id": 50,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Consumer.ProdCons$Consumer",
+                    "src": " ProdCons.java:42    : new Consumer().start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 6,
+            "threadInfo": {
+                "id": 51,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 2
+            },
+            "choiceInfo": {
+                "id": 52,
+                "choiceId": "START",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 53,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:40    : for (int i = 0; i < N; i++) {"
+                },
+                {
+                    "id": 54,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:41    : new Producer(i).start();"
+                },
+                {
+                    "id": 55,
+                    "src": " ProdCons.java:14    : Producer(int i) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 7,
+            "threadInfo": {
+                "id": 56,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 57,
+                "choiceId": "LOCK",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 58,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " ProdCons.java:15    : data = new byte[]{(byte)i, (byte)(i + DELTA)};"
+                },
+                {
+                    "id": 59,
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 60,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isFieldAccess": true,
+                    "accessedField": "ProdCons$Producer.nameId",
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 61,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 62,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 63,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Producer.ProdCons$Producer",
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                }
+            ]
+        },
+        {
+            "transitionId": 8,
+            "threadInfo": {
+                "id": 64,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 65,
+                "choiceId": "LOCK",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 66,
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Producer.ProdCons$Producer",
+                    "src": " ProdCons.java:16    : setName('Producer ' + String.valueOf(nameId++));"
+                }
+            ]
+        },
+        {
+            "transitionId": 9,
+            "threadInfo": {
+                "id": 67,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 68,
+                "choiceId": "EXPOSE",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 69,
+                    "noSrc": " [7 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "ProdCons$Producer.<init>(I)V",
+                    "src": " ProdCons.java:17    : }"
+                },
+                {
+                    "id": 70,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Producer.ProdCons$Producer",
+                    "src": " ProdCons.java:41    : new Producer(i).start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 10,
+            "threadInfo": {
+                "id": 71,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 3
+            },
+            "choiceInfo": {
+                "id": 72,
+                "choiceId": "START",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 73,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:42    : new Consumer().start();"
+                },
+                {
+                    "id": 74,
+                    "src": " ProdCons.java:26    : public Consumer () {"
+                }
+            ]
+        },
+        {
+            "transitionId": 11,
+            "threadInfo": {
+                "id": 75,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 76,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 77,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 78,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isFieldAccess": true,
+                    "accessedField": "ProdCons$Consumer.nameId",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 79,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 80,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                },
+                {
+                    "id": 81,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Consumer.ProdCons$Consumer",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                }
+            ]
+        },
+        {
+            "transitionId": 12,
+            "threadInfo": {
+                "id": 82,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 83,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 84,
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Consumer.ProdCons$Consumer",
+                    "src": " ProdCons.java:27    : setName('Consumer ' + String.valueOf(nameId++));"
+                }
+            ]
+        },
+        {
+            "transitionId": 13,
+            "threadInfo": {
+                "id": 85,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 86,
+                "choiceId": "EXPOSE",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 87,
+                    "noSrc": " [7 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "ProdCons$Consumer.<init>()V",
+                    "src": " ProdCons.java:28    : }"
+                },
+                {
+                    "id": 88,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "isMethodCall": true,
+                    "calledMethodName": "ProdCons$Consumer.ProdCons$Consumer",
+                    "src": " ProdCons.java:42    : new Consumer().start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 14,
+            "threadInfo": {
+                "id": 89,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 4
+            },
+            "choiceInfo": {
+                "id": 90,
+                "choiceId": "START",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 91,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:40    : for (int i = 0; i < N; i++) {"
+                },
+                {
+                    "id": 92,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "ProdCons.main([Ljava/lang/String;)V",
+                    "src": " ProdCons.java:44    : }"
+                },
+                {
+                    "id": 93,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons.[main]",
+                    "src": " ProdCons.java:3     : public class ProdCons {"
+                }
+            ]
+        },
+        {
+            "transitionId": 15,
+            "threadInfo": {
+                "id": 94,
+                "threadId": 1,
+                "threadName": "Producer 0",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 1,
+                "nextThreadName": "Producer 0"
+            },
+            "choiceInfo": {
+                "id": 95,
+                "choiceId": "TERMINATE",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 96,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Producer.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "ProdCons.q",
+                    "src": " ProdCons.java:20    : q.put(data);"
+                }
+            ]
+        },
+        {
+            "transitionId": 16,
+            "threadInfo": {
+                "id": 97,
+                "threadId": 1,
+                "threadName": "Producer 0",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 98,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=Producer 0,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 99,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Producer.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "Queue.Queue",
+                    "src": " ProdCons.java:20    : q.put(data);"
+                },
+                {
+                    "id": 100,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "src": " Queue.java:18       : int len = items.length;"
+                },
+                {
+                    "id": 101,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.$assertionsDisabled",
+                    "src": " Queue.java:19       : assert (len <= size);"
+                },
+                {
+                    "id": 102,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "src": " Queue.java:21       : while (p + len > c + size) {"
+                },
+                {
+                    "id": 103,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.$assertionsDisabled",
+                    "src": " Queue.java:27       : assert (p + len <= c + size) :"
+                },
+                {
+                    "id": 104,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "src": " Queue.java:29       : for (int i = 0; i < len; i++) {"
+                },
+                {
+                    "id": 105,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "src": " Queue.java:30       : data[p++ % size] = items[i];"
+                },
+                {
+                    "id": 106,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "src": " Queue.java:29       : for (int i = 0; i < len; i++) {"
+                },
+                {
+                    "id": 107,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "src": " Queue.java:30       : data[p++ % size] = items[i];"
+                },
+                {
+                    "id": 108,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "src": " Queue.java:29       : for (int i = 0; i < len; i++) {"
+                },
+                {
+                    "id": 109,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.$assertionsDisabled",
+                    "src": " Queue.java:32       : assert (p <= c + size) :"
+                },
+                {
+                    "id": 110,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "notifyAll",
+                    "src": " Queue.java:34       : notifyAll();"
+                },
+                {
+                    "id": 111,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Queue.put([B)V",
+                    "src": " Queue.java:35       : }"
+                },
+                {
+                    "id": 112,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Producer.run()V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "ProdCons$Producer.run()V",
+                    "src": " ProdCons.java:21    : }"
+                },
+                {
+                    "id": 113,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Producer.[run]",
+                    "src": " ProdCons.java:4     : static final int DELTA = 16;"
+                }
+            ]
+        },
+        {
+            "transitionId": 17,
+            "threadInfo": {
+                "id": 114,
+                "threadId": 2,
+                "threadName": "Consumer 0",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "WAITING",
+                "threadSwitch": true,
+                "prevTid": 1,
+                "prevThreadName": "Producer 0",
+                "nextTid": 2,
+                "nextThreadName": "Consumer 0"
+            },
+            "choiceInfo": {
+                "id": 115,
+                "choiceId": "TERMINATE",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 116,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Consumer.run()V",
+                    "src": " ProdCons.java:30    : byte[] result = new byte[2];"
+                },
+                {
+                    "id": 117,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Consumer.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "ProdCons.q",
+                    "src": " ProdCons.java:31    : q.remove(result);"
+                }
+            ]
+        },
+        {
+            "transitionId": 18,
+            "threadInfo": {
+                "id": 118,
+                "threadId": 2,
+                "threadName": "Consumer 0",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 119,
+                "choiceId": "LOCK",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=Consumer 0,id=2,state=WAITING]",
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 120,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Consumer.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "Queue.Queue",
+                    "src": " ProdCons.java:31    : q.remove(result);"
+                },
+                {
+                    "id": 121,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.remove([B)V",
+                    "src": " Queue.java:54       : int len = storage.length;"
+                },
+                {
+                    "id": 122,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.remove([B)V",
+                    "src": " Queue.java:55       : waitForData(len);"
+                },
+                {
+                    "id": 123,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.waitForData(I)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.$assertionsDisabled",
+                    "src": " Queue.java:39       : assert (len <= size);"
+                },
+                {
+                    "id": 124,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.waitForData(I)V",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "wait",
+                    "src": " Queue.java:42       : wait();"
+                }
+            ]
+        },
+        {
+            "transitionId": 19,
+            "threadInfo": {
+                "id": 125,
+                "threadId": 3,
+                "threadName": "Producer 1",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "WAITING",
+                "threadSwitch": true,
+                "prevTid": 2,
+                "prevThreadName": "Consumer 0",
+                "nextTid": 3,
+                "nextThreadName": "Producer 1"
+            },
+            "choiceInfo": {
+                "id": 126,
+                "choiceId": "WAIT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 127,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Producer.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "ProdCons.q",
+                    "src": " ProdCons.java:20    : q.put(data);"
+                }
+            ]
+        },
+        {
+            "transitionId": 20,
+            "threadInfo": {
+                "id": 128,
+                "threadId": 3,
+                "threadName": "Producer 1",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 129,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 130,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Producer.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "ProdCons.q",
+                    "src": " ProdCons.java:20    : q.put(data);"
+                }
+            ]
+        },
+        {
+            "transitionId": 21,
+            "threadInfo": {
+                "id": 131,
+                "threadId": 3,
+                "threadName": "Producer 1",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 132,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 133,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Producer.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "Queue.Queue",
+                    "src": " ProdCons.java:20    : q.put(data);"
+                },
+                {
+                    "id": 134,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "src": " Queue.java:18       : int len = items.length;"
+                },
+                {
+                    "id": 135,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.$assertionsDisabled",
+                    "src": " Queue.java:19       : assert (len <= size);"
+                }
+            ]
+        },
+        {
+            "transitionId": 22,
+            "threadInfo": {
+                "id": 136,
+                "threadId": 3,
+                "threadName": "Producer 1",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 137,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 138,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.size",
+                    "src": " Queue.java:19       : assert (len <= size);"
+                },
+                {
+                    "id": 139,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "src": " Queue.java:21       : while (p + len > c + size) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 23,
+            "threadInfo": {
+                "id": 140,
+                "threadId": 3,
+                "threadName": "Producer 1",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 141,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 142,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.p",
+                    "src": " Queue.java:21       : while (p + len > c + size) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 24,
+            "threadInfo": {
+                "id": 143,
+                "threadId": 3,
+                "threadName": "Producer 1",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 144,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 145,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.c",
+                    "src": " Queue.java:21       : while (p + len > c + size) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 25,
+            "threadInfo": {
+                "id": 146,
+                "threadId": 3,
+                "threadName": "Producer 1",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 147,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=Producer 1,id=3,state=WAITING]",
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 148,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.size",
+                    "src": " Queue.java:21       : while (p + len > c + size) {"
+                },
+                {
+                    "id": 149,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.put([B)V",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "wait",
+                    "src": " Queue.java:23       : wait();"
+                }
+            ]
+        },
+        {
+            "transitionId": 26,
+            "threadInfo": {
+                "id": 150,
+                "threadId": 4,
+                "threadName": "Consumer 1",
+                "threadEntryMethod": "ProdCons.main([Ljava/lang/String;)V",
+                "threadState": "WAITING",
+                "threadSwitch": true,
+                "prevTid": 3,
+                "prevThreadName": "Producer 1",
+                "nextTid": 4,
+                "nextThreadName": "Consumer 1"
+            },
+            "choiceInfo": {
+                "id": 151,
+                "choiceId": "WAIT",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=Consumer 1,id=4,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=Consumer 1,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 152,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Consumer.run()V",
+                    "src": " ProdCons.java:30    : byte[] result = new byte[2];"
+                },
+                {
+                    "id": 153,
+                    "isSynchronized": true,
+                    "syncMethodName": "ProdCons$Consumer.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "ProdCons.q",
+                    "src": " ProdCons.java:31    : q.remove(result);"
+                },
+                {
+                    "id": 154,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.remove([B)V",
+                    "src": " Queue.java:54       : int len = storage.length;"
+                },
+                {
+                    "id": 155,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.remove([B)V",
+                    "src": " Queue.java:55       : waitForData(len);"
+                },
+                {
+                    "id": 156,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.waitForData(I)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Queue.$assertionsDisabled",
+                    "src": " Queue.java:39       : assert (len <= size);"
+                },
+                {
+                    "id": 157,
+                    "isSynchronized": true,
+                    "syncMethodName": "Queue.waitForData(I)V",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "wait",
+                    "src": " Queue.java:42       : wait();"
+                }
+            ]
+        }
+    ],
+    "appName": "fix-this!",
+    "type": "Java Path Finder Trace",
+    "time": "1598862204780000"
+}

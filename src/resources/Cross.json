@@ -1,0 +1,1311 @@
+{
+    "transitions": [
+        {
+            "transitionId": 0,
+            "threadInfo": {
+                "id": 0,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 0,
+                "nextThreadName": "main"
+            },
+            "choiceInfo": {
+                "id": 1,
+                "choiceId": "ROOT",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 2,
+                    "noSrc": " [3168 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.<clinit>()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Road.NW",
+                    "src": " Cross.java:7        : static Road nwRoad = Road.NW;"
+                },
+                {
+                    "id": 3,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Road.<clinit>()V",
+                    "src": " Cross.java:5        : enum Road {NW, NE, SW, SE};"
+                },
+                {
+                    "id": 4,
+                    "noSrc": " [10 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Road.<init>(Ljava/lang/String;I)V",
+                    "src": " Cross.java:5        : enum Road {NW, NE, SW, SE};"
+                },
+                {
+                    "id": 5,
+                    "noSrc": " [10 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Road.<init>(Ljava/lang/String;I)V",
+                    "src": " Cross.java:5        : enum Road {NW, NE, SW, SE};"
+                },
+                {
+                    "id": 6,
+                    "noSrc": " [10 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Road.<init>(Ljava/lang/String;I)V",
+                    "src": " Cross.java:5        : enum Road {NW, NE, SW, SE};"
+                },
+                {
+                    "id": 7,
+                    "noSrc": " [10 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Road.<init>(Ljava/lang/String;I)V",
+                    "src": " Cross.java:5        : enum Road {NW, NE, SW, SE};"
+                },
+                {
+                    "id": 8,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Road.[<clinit>]",
+                    "src": " Cross.java:1        : public class Cross {"
+                },
+                {
+                    "id": 9,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.<clinit>()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Road.NW",
+                    "src": " Cross.java:7        : static Road nwRoad = Road.NW;"
+                },
+                {
+                    "id": 10,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.<clinit>()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Road.NE",
+                    "src": " Cross.java:8        : static Road neRoad = Road.NE;"
+                },
+                {
+                    "id": 11,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.<clinit>()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Road.SW",
+                    "src": " Cross.java:9        : static Road swRoad = Road.SW;"
+                },
+                {
+                    "id": 12,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.<clinit>()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Road.SE",
+                    "src": " Cross.java:10       : static Road seRoad = Road.SE;"
+                },
+                {
+                    "id": 13,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.[<clinit>]",
+                    "src": " Cross.java:1        : public class Cross {"
+                },
+                {
+                    "id": 14,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:57       : Car carW = new Car(Direction.W);"
+                },
+                {
+                    "id": 15,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Direction.<clinit>()V",
+                    "src": " Cross.java:3        : enum Direction {N, E, S, W};"
+                },
+                {
+                    "id": 16,
+                    "noSrc": " [10 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Direction.<init>(Ljava/lang/String;I)V",
+                    "src": " Cross.java:3        : enum Direction {N, E, S, W};"
+                },
+                {
+                    "id": 17,
+                    "noSrc": " [10 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Direction.<init>(Ljava/lang/String;I)V",
+                    "src": " Cross.java:3        : enum Direction {N, E, S, W};"
+                },
+                {
+                    "id": 18,
+                    "noSrc": " [10 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Direction.<init>(Ljava/lang/String;I)V",
+                    "src": " Cross.java:3        : enum Direction {N, E, S, W};"
+                },
+                {
+                    "id": 19,
+                    "noSrc": " [10 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Direction.<init>(Ljava/lang/String;I)V",
+                    "src": " Cross.java:3        : enum Direction {N, E, S, W};"
+                },
+                {
+                    "id": 20,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Direction.[<clinit>]",
+                    "src": " Cross.java:1        : public class Cross {"
+                },
+                {
+                    "id": 21,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Direction.W",
+                    "src": " Cross.java:57       : Car carW = new Car(Direction.W);"
+                },
+                {
+                    "id": 22,
+                    "src": " Cross.java:16       : public Car(Direction dir) {"
+                },
+                {
+                    "id": 23,
+                    "noSrc": " [145 insn w/o sources]",
+                    "src": " Cross.java:17       : this.dir = dir;"
+                },
+                {
+                    "id": 24,
+                    "src": " Cross.java:18       : setName(dir.name());"
+                },
+                {
+                    "id": 25,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:18       : setName(dir.name());"
+                },
+                {
+                    "id": 26,
+                    "noSrc": " [11 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Car.<init>(LCross$Direction;)V",
+                    "src": " Cross.java:19       : }"
+                },
+                {
+                    "id": 27,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:57       : Car carW = new Car(Direction.W);"
+                },
+                {
+                    "id": 28,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:58       : Car carE = new Car(Direction.E);"
+                },
+                {
+                    "id": 29,
+                    "src": " Cross.java:16       : public Car(Direction dir) {"
+                },
+                {
+                    "id": 30,
+                    "noSrc": " [145 insn w/o sources]",
+                    "src": " Cross.java:17       : this.dir = dir;"
+                },
+                {
+                    "id": 31,
+                    "src": " Cross.java:18       : setName(dir.name());"
+                },
+                {
+                    "id": 32,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:18       : setName(dir.name());"
+                },
+                {
+                    "id": 33,
+                    "noSrc": " [11 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Car.<init>(LCross$Direction;)V",
+                    "src": " Cross.java:19       : }"
+                },
+                {
+                    "id": 34,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:58       : Car carE = new Car(Direction.E);"
+                },
+                {
+                    "id": 35,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:59       : Car carN = new Car(Direction.N);"
+                },
+                {
+                    "id": 36,
+                    "src": " Cross.java:16       : public Car(Direction dir) {"
+                },
+                {
+                    "id": 37,
+                    "noSrc": " [145 insn w/o sources]",
+                    "src": " Cross.java:17       : this.dir = dir;"
+                },
+                {
+                    "id": 38,
+                    "src": " Cross.java:18       : setName(dir.name());"
+                },
+                {
+                    "id": 39,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:18       : setName(dir.name());"
+                },
+                {
+                    "id": 40,
+                    "noSrc": " [11 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Car.<init>(LCross$Direction;)V",
+                    "src": " Cross.java:19       : }"
+                },
+                {
+                    "id": 41,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:59       : Car carN = new Car(Direction.N);"
+                },
+                {
+                    "id": 42,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:60       : Car carS = new Car(Direction.S);"
+                },
+                {
+                    "id": 43,
+                    "src": " Cross.java:16       : public Car(Direction dir) {"
+                },
+                {
+                    "id": 44,
+                    "noSrc": " [145 insn w/o sources]",
+                    "src": " Cross.java:17       : this.dir = dir;"
+                },
+                {
+                    "id": 45,
+                    "src": " Cross.java:18       : setName(dir.name());"
+                },
+                {
+                    "id": 46,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:18       : setName(dir.name());"
+                },
+                {
+                    "id": 47,
+                    "noSrc": " [11 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross$Car.<init>(LCross$Direction;)V",
+                    "src": " Cross.java:19       : }"
+                },
+                {
+                    "id": 48,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:60       : Car carS = new Car(Direction.S);"
+                },
+                {
+                    "id": 49,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:62       : carW.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 1,
+            "threadInfo": {
+                "id": 50,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 1
+            },
+            "choiceInfo": {
+                "id": 51,
+                "choiceId": "START",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 52,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:63       : carE.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 2,
+            "threadInfo": {
+                "id": 53,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 2
+            },
+            "choiceInfo": {
+                "id": 54,
+                "choiceId": "START",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 55,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:64       : carN.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 3,
+            "threadInfo": {
+                "id": 56,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 3
+            },
+            "choiceInfo": {
+                "id": 57,
+                "choiceId": "START",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 58,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:65       : carS.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 4,
+            "threadInfo": {
+                "id": 59,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 4
+            },
+            "choiceInfo": {
+                "id": 60,
+                "choiceId": "START",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 61,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "Cross.main([Ljava/lang/String;)V",
+                    "src": " Cross.java:66       : }"
+                },
+                {
+                    "id": 62,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross.[main]",
+                    "src": " Cross.java:3        : enum Direction {N, E, S, W};"
+                }
+            ]
+        },
+        {
+            "transitionId": 5,
+            "threadInfo": {
+                "id": 63,
+                "threadId": 1,
+                "threadName": "W",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 1,
+                "nextThreadName": "W"
+            },
+            "choiceInfo": {
+                "id": 64,
+                "choiceId": "TERMINATE",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 65,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.[run]",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:1        : public class Cross {"
+                },
+                {
+                    "id": 66,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 67,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Car.$SWITCH_TABLE$Cross$Direction",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                },
+                {
+                    "id": 68,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Direction.values()[LCross$Direction;",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Direction.ENUM$VALUES",
+                    "src": " Cross.java:1        : public class Cross {"
+                },
+                {
+                    "id": 69,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Direction.values()[LCross$Direction;",
+                    "src": " Cross.java:1        : public class Cross {"
+                },
+                {
+                    "id": 70,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                },
+                {
+                    "id": 71,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                },
+                {
+                    "id": 72,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                },
+                {
+                    "id": 73,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                },
+                {
+                    "id": 74,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                },
+                {
+                    "id": 75,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 76,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 77,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.swRoad",
+                    "src": " Cross.java:46       : synchronized(swRoad){"
+                }
+            ]
+        },
+        {
+            "transitionId": 6,
+            "threadInfo": {
+                "id": 78,
+                "threadId": 1,
+                "threadName": "W",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 79,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 80,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:46       : synchronized(swRoad){"
+                },
+                {
+                    "id": 81,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.seRoad",
+                    "src": " Cross.java:47       : synchronized(seRoad){"
+                }
+            ]
+        },
+        {
+            "transitionId": 7,
+            "threadInfo": {
+                "id": 82,
+                "threadId": 2,
+                "threadName": "E",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED",
+                "threadSwitch": true,
+                "prevTid": 1,
+                "prevThreadName": "W",
+                "nextTid": 2,
+                "nextThreadName": "E"
+            },
+            "choiceInfo": {
+                "id": 83,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 84,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.[run]",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:1        : public class Cross {"
+                },
+                {
+                    "id": 85,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 86,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Car.$SWITCH_TABLE$Cross$Direction",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                }
+            ]
+        },
+        {
+            "transitionId": 8,
+            "threadInfo": {
+                "id": 87,
+                "threadId": 2,
+                "threadName": "E",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 88,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 89,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Car.$SWITCH_TABLE$Cross$Direction",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                },
+                {
+                    "id": 90,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 91,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 9,
+            "threadInfo": {
+                "id": 92,
+                "threadId": 2,
+                "threadName": "E",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 93,
+                "choiceId": "SHARED_ARRAY",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 94,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 95,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.neRoad",
+                    "src": " Cross.java:39       : synchronized(neRoad){"
+                }
+            ]
+        },
+        {
+            "transitionId": 10,
+            "threadInfo": {
+                "id": 96,
+                "threadId": 2,
+                "threadName": "E",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 97,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 98,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.neRoad",
+                    "src": " Cross.java:39       : synchronized(neRoad){"
+                }
+            ]
+        },
+        {
+            "transitionId": 11,
+            "threadInfo": {
+                "id": 99,
+                "threadId": 2,
+                "threadName": "E",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 100,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 101,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:39       : synchronized(neRoad){"
+                },
+                {
+                    "id": 102,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.nwRoad",
+                    "src": " Cross.java:40       : synchronized(nwRoad){"
+                }
+            ]
+        },
+        {
+            "transitionId": 12,
+            "threadInfo": {
+                "id": 103,
+                "threadId": 2,
+                "threadName": "E",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 104,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 105,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.nwRoad",
+                    "src": " Cross.java:40       : synchronized(nwRoad){"
+                }
+            ]
+        },
+        {
+            "transitionId": 13,
+            "threadInfo": {
+                "id": 106,
+                "threadId": 3,
+                "threadName": "N",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED",
+                "threadSwitch": true,
+                "prevTid": 2,
+                "prevThreadName": "E",
+                "nextTid": 3,
+                "nextThreadName": "N"
+            },
+            "choiceInfo": {
+                "id": 107,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 108,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.[run]",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:1        : public class Cross {"
+                },
+                {
+                    "id": 109,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 110,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Car.$SWITCH_TABLE$Cross$Direction",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                }
+            ]
+        },
+        {
+            "transitionId": 14,
+            "threadInfo": {
+                "id": 111,
+                "threadId": 3,
+                "threadName": "N",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 112,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 113,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Car.$SWITCH_TABLE$Cross$Direction",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                },
+                {
+                    "id": 114,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 115,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 15,
+            "threadInfo": {
+                "id": 116,
+                "threadId": 3,
+                "threadName": "N",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 117,
+                "choiceId": "SHARED_ARRAY",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 118,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 119,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.nwRoad",
+                    "src": " Cross.java:25       : synchronized (nwRoad) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 16,
+            "threadInfo": {
+                "id": 120,
+                "threadId": 3,
+                "threadName": "N",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 121,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 122,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.nwRoad",
+                    "src": " Cross.java:25       : synchronized (nwRoad) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 17,
+            "threadInfo": {
+                "id": 123,
+                "threadId": 3,
+                "threadName": "N",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 124,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=E,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 125,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:25       : synchronized (nwRoad) {"
+                },
+                {
+                    "id": 126,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.swRoad",
+                    "src": " Cross.java:26       : synchronized(swRoad){"
+                }
+            ]
+        },
+        {
+            "transitionId": 18,
+            "threadInfo": {
+                "id": 127,
+                "threadId": 3,
+                "threadName": "N",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 128,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=N,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 129,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.swRoad",
+                    "src": " Cross.java:26       : synchronized(swRoad){"
+                }
+            ]
+        },
+        {
+            "transitionId": 19,
+            "threadInfo": {
+                "id": 130,
+                "threadId": 4,
+                "threadName": "S",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED",
+                "threadSwitch": true,
+                "prevTid": 3,
+                "prevThreadName": "N",
+                "nextTid": 4,
+                "nextThreadName": "S"
+            },
+            "choiceInfo": {
+                "id": 131,
+                "choiceId": "BLOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=S,id=4,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 132,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.[run]",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:1        : public class Cross {"
+                },
+                {
+                    "id": 133,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "Cross$Car.Cross$Car",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 134,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Car.$SWITCH_TABLE$Cross$Direction",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                }
+            ]
+        },
+        {
+            "transitionId": 20,
+            "threadInfo": {
+                "id": 135,
+                "threadId": 4,
+                "threadName": "S",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 136,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=S,id=4,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 137,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.$SWITCH_TABLE$Cross$Direction()[I",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross$Car.$SWITCH_TABLE$Cross$Direction",
+                    "src": " Cross.java:12       : static class Car extends Thread {"
+                },
+                {
+                    "id": 138,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 139,
+                    "noSrc": " [3 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 21,
+            "threadInfo": {
+                "id": 140,
+                "threadId": 4,
+                "threadName": "S",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 141,
+                "choiceId": "SHARED_ARRAY",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=S,id=4,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 142,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:23       : switch(dir) {"
+                },
+                {
+                    "id": 143,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.seRoad",
+                    "src": " Cross.java:32       : synchronized(seRoad){"
+                }
+            ]
+        },
+        {
+            "transitionId": 22,
+            "threadInfo": {
+                "id": 144,
+                "threadId": 4,
+                "threadName": "S",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 145,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=S,id=4,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 146,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.seRoad",
+                    "src": " Cross.java:32       : synchronized(seRoad){"
+                }
+            ]
+        },
+        {
+            "transitionId": 23,
+            "threadInfo": {
+                "id": 147,
+                "threadId": 4,
+                "threadName": "S",
+                "threadEntryMethod": "Cross.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 148,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=S,id=4,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=W,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=S,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 149,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "src": " Cross.java:32       : synchronized(seRoad){"
+                },
+                {
+                    "id": 150,
+                    "isSynchronized": true,
+                    "syncMethodName": "Cross$Car.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "Cross.neRoad",
+                    "src": " Cross.java:33       : synchronized(neRoad){"
+                }
+            ]
+        }
+    ],
+    "appName": "fix-this!",
+    "type": "Java Path Finder Trace",
+    "time": "1598856485428000"
+}

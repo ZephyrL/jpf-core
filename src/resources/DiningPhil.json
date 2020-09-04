@@ -1,0 +1,1346 @@
+{
+    "transitions": [
+        {
+            "transitionId": 0,
+            "threadInfo": {
+                "id": 0,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 0,
+                "nextThreadName": "main"
+            },
+            "choiceInfo": {
+                "id": 1,
+                "choiceId": "ROOT",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 2,
+                    "noSrc": " [3168 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.<clinit>()V",
+                    "src": " DiningPhil.java:46  : static int nPhilosophers = 6;"
+                },
+                {
+                    "id": 3,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:49  : if (args.length > 0){"
+                },
+                {
+                    "id": 4,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "DiningPhil.nPhilosophers",
+                    "src": " DiningPhil.java:54  : Fork[] forks = new Fork[nPhilosophers];"
+                },
+                {
+                    "id": 5,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:55  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 6,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 7,
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 8,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Fork.<init>()V",
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 9,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 10,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:55  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 11,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 12,
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 13,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Fork.<init>()V",
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 14,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 15,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:55  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 16,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 17,
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 18,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Fork.<init>()V",
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 19,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 20,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:55  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 21,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 22,
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 23,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Fork.<init>()V",
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 24,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 25,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:55  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 26,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 27,
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 28,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Fork.<init>()V",
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 29,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 30,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:55  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 31,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 32,
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 33,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Fork.<init>()V",
+                    "src": " DiningPhil.java:21  : static class Fork {"
+                },
+                {
+                    "id": 34,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:56  : forks[i] = new Fork();"
+                },
+                {
+                    "id": 35,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:55  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 36,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 37,
+                    "src": " DiningPhil.java:29  : public Philosopher(Fork left, Fork right) {"
+                },
+                {
+                    "id": 38,
+                    "noSrc": " [145 insn w/o sources]",
+                    "src": " DiningPhil.java:30  : this.left = left;"
+                },
+                {
+                    "id": 39,
+                    "src": " DiningPhil.java:31  : this.right = right;"
+                },
+                {
+                    "id": 40,
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Philosopher.<init>(LDiningPhil$Fork;LDiningPhil$Fork;)V",
+                    "src": " DiningPhil.java:33  : }"
+                },
+                {
+                    "id": 41,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 42,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:60  : p.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 1,
+            "threadInfo": {
+                "id": 43,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 1
+            },
+            "choiceInfo": {
+                "id": 44,
+                "choiceId": "START",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 45,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:58  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 46,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 47,
+                    "src": " DiningPhil.java:29  : public Philosopher(Fork left, Fork right) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 2,
+            "threadInfo": {
+                "id": 48,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 49,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 50,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " DiningPhil.java:30  : this.left = left;"
+                },
+                {
+                    "id": 51,
+                    "src": " DiningPhil.java:31  : this.right = right;"
+                }
+            ]
+        },
+        {
+            "transitionId": 3,
+            "threadInfo": {
+                "id": 52,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 53,
+                "choiceId": "EXPOSE",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 54,
+                    "isFieldAccess": true,
+                    "accessedField": "DiningPhil$Philosopher.right",
+                    "src": " DiningPhil.java:31  : this.right = right;"
+                },
+                {
+                    "id": 55,
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Philosopher.<init>(LDiningPhil$Fork;LDiningPhil$Fork;)V",
+                    "src": " DiningPhil.java:33  : }"
+                },
+                {
+                    "id": 56,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 57,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:60  : p.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 4,
+            "threadInfo": {
+                "id": 58,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 2
+            },
+            "choiceInfo": {
+                "id": 59,
+                "choiceId": "START",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 60,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:58  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 61,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 62,
+                    "src": " DiningPhil.java:29  : public Philosopher(Fork left, Fork right) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 5,
+            "threadInfo": {
+                "id": 63,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 64,
+                "choiceId": "LOCK",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 65,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " DiningPhil.java:30  : this.left = left;"
+                },
+                {
+                    "id": 66,
+                    "src": " DiningPhil.java:31  : this.right = right;"
+                }
+            ]
+        },
+        {
+            "transitionId": 6,
+            "threadInfo": {
+                "id": 67,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 68,
+                "choiceId": "EXPOSE",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 69,
+                    "isFieldAccess": true,
+                    "accessedField": "DiningPhil$Philosopher.right",
+                    "src": " DiningPhil.java:31  : this.right = right;"
+                },
+                {
+                    "id": 70,
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Philosopher.<init>(LDiningPhil$Fork;LDiningPhil$Fork;)V",
+                    "src": " DiningPhil.java:33  : }"
+                },
+                {
+                    "id": 71,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 72,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:60  : p.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 7,
+            "threadInfo": {
+                "id": 73,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 3
+            },
+            "choiceInfo": {
+                "id": 74,
+                "choiceId": "START",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 75,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:58  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 76,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 77,
+                    "src": " DiningPhil.java:29  : public Philosopher(Fork left, Fork right) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 8,
+            "threadInfo": {
+                "id": 78,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 79,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 80,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " DiningPhil.java:30  : this.left = left;"
+                },
+                {
+                    "id": 81,
+                    "src": " DiningPhil.java:31  : this.right = right;"
+                }
+            ]
+        },
+        {
+            "transitionId": 9,
+            "threadInfo": {
+                "id": 82,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 83,
+                "choiceId": "EXPOSE",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 84,
+                    "isFieldAccess": true,
+                    "accessedField": "DiningPhil$Philosopher.right",
+                    "src": " DiningPhil.java:31  : this.right = right;"
+                },
+                {
+                    "id": 85,
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Philosopher.<init>(LDiningPhil$Fork;LDiningPhil$Fork;)V",
+                    "src": " DiningPhil.java:33  : }"
+                },
+                {
+                    "id": 86,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 87,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:60  : p.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 10,
+            "threadInfo": {
+                "id": 88,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 4
+            },
+            "choiceInfo": {
+                "id": 89,
+                "choiceId": "START",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 90,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:58  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 91,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 92,
+                    "src": " DiningPhil.java:29  : public Philosopher(Fork left, Fork right) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 11,
+            "threadInfo": {
+                "id": 93,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 94,
+                "choiceId": "LOCK",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 95,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " DiningPhil.java:30  : this.left = left;"
+                },
+                {
+                    "id": 96,
+                    "src": " DiningPhil.java:31  : this.right = right;"
+                }
+            ]
+        },
+        {
+            "transitionId": 12,
+            "threadInfo": {
+                "id": 97,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 98,
+                "choiceId": "EXPOSE",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 99,
+                    "isFieldAccess": true,
+                    "accessedField": "DiningPhil$Philosopher.right",
+                    "src": " DiningPhil.java:31  : this.right = right;"
+                },
+                {
+                    "id": 100,
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Philosopher.<init>(LDiningPhil$Fork;LDiningPhil$Fork;)V",
+                    "src": " DiningPhil.java:33  : }"
+                },
+                {
+                    "id": 101,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 102,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:60  : p.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 13,
+            "threadInfo": {
+                "id": 103,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 5
+            },
+            "choiceInfo": {
+                "id": 104,
+                "choiceId": "START",
+                "numChoices": 6,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 105,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:58  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 106,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 107,
+                    "src": " DiningPhil.java:29  : public Philosopher(Fork left, Fork right) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 14,
+            "threadInfo": {
+                "id": 108,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 109,
+                "choiceId": "LOCK",
+                "numChoices": 6,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 110,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " DiningPhil.java:30  : this.left = left;"
+                },
+                {
+                    "id": 111,
+                    "src": " DiningPhil.java:31  : this.right = right;"
+                },
+                {
+                    "id": 112,
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil$Philosopher.<init>(LDiningPhil$Fork;LDiningPhil$Fork;)V",
+                    "src": " DiningPhil.java:33  : }"
+                },
+                {
+                    "id": 113,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:59  : Philosopher p = new Philosopher(forks[i], forks[(i + 1) % nPhilosophers]);"
+                },
+                {
+                    "id": 114,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:60  : p.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 15,
+            "threadInfo": {
+                "id": 115,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 6
+            },
+            "choiceInfo": {
+                "id": 116,
+                "choiceId": "START",
+                "numChoices": 7,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 117,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:58  : for (int i = 0; i < nPhilosophers; i++) {"
+                },
+                {
+                    "id": 118,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "DiningPhil.main([Ljava/lang/String;)V",
+                    "src": " DiningPhil.java:63  : }"
+                }
+            ]
+        },
+        {
+            "transitionId": 16,
+            "threadInfo": {
+                "id": 119,
+                "threadId": 1,
+                "threadName": "Thread-1",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 1,
+                "nextThreadName": "Thread-1"
+            },
+            "choiceInfo": {
+                "id": 120,
+                "choiceId": "TERMINATE",
+                "numChoices": 6,
+                "currentChoice": "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 121,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 17,
+            "threadInfo": {
+                "id": 122,
+                "threadId": 1,
+                "threadName": "Thread-1",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 123,
+                "choiceId": "LOCK",
+                "numChoices": 6,
+                "currentChoice": "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 124,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                },
+                {
+                    "id": 125,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:39  : synchronized (right) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 18,
+            "threadInfo": {
+                "id": 126,
+                "threadId": 2,
+                "threadName": "Thread-2",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 1,
+                "prevThreadName": "Thread-1",
+                "nextTid": 2,
+                "nextThreadName": "Thread-2"
+            },
+            "choiceInfo": {
+                "id": 127,
+                "choiceId": "LOCK",
+                "numChoices": 6,
+                "currentChoice": "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 128,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 19,
+            "threadInfo": {
+                "id": 129,
+                "threadId": 2,
+                "threadName": "Thread-2",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 130,
+                "choiceId": "LOCK",
+                "numChoices": 6,
+                "currentChoice": "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 131,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                },
+                {
+                    "id": 132,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:39  : synchronized (right) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 20,
+            "threadInfo": {
+                "id": 133,
+                "threadId": 3,
+                "threadName": "Thread-3",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 2,
+                "prevThreadName": "Thread-2",
+                "nextTid": 3,
+                "nextThreadName": "Thread-3"
+            },
+            "choiceInfo": {
+                "id": 134,
+                "choiceId": "LOCK",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 135,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 21,
+            "threadInfo": {
+                "id": 136,
+                "threadId": 3,
+                "threadName": "Thread-3",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 137,
+                "choiceId": "LOCK",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-2,id=2,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 138,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                },
+                {
+                    "id": 139,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:39  : synchronized (right) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 22,
+            "threadInfo": {
+                "id": 140,
+                "threadId": 4,
+                "threadName": "Thread-4",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 3,
+                "prevThreadName": "Thread-3",
+                "nextTid": 4,
+                "nextThreadName": "Thread-4"
+            },
+            "choiceInfo": {
+                "id": 141,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 142,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 23,
+            "threadInfo": {
+                "id": 143,
+                "threadId": 4,
+                "threadName": "Thread-4",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 144,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-3,id=3,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 145,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                },
+                {
+                    "id": 146,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:39  : synchronized (right) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 24,
+            "threadInfo": {
+                "id": 147,
+                "threadId": 5,
+                "threadName": "Thread-5",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 4,
+                "prevThreadName": "Thread-4",
+                "nextTid": 5,
+                "nextThreadName": "Thread-5"
+            },
+            "choiceInfo": {
+                "id": 148,
+                "choiceId": "LOCK",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 149,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 25,
+            "threadInfo": {
+                "id": 150,
+                "threadId": 5,
+                "threadName": "Thread-5",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING"
+            },
+            "choiceInfo": {
+                "id": 151,
+                "choiceId": "LOCK",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-4,id=4,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 152,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                },
+                {
+                    "id": 153,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:39  : synchronized (right) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 26,
+            "threadInfo": {
+                "id": 154,
+                "threadId": 6,
+                "threadName": "Thread-6",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 5,
+                "prevThreadName": "Thread-5",
+                "nextTid": 6,
+                "nextThreadName": "Thread-6"
+            },
+            "choiceInfo": {
+                "id": 155,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 156,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 27,
+            "threadInfo": {
+                "id": 157,
+                "threadId": 6,
+                "threadName": "Thread-6",
+                "threadEntryMethod": "DiningPhil.main([Ljava/lang/String;)V",
+                "threadState": "BLOCKED"
+            },
+            "choiceInfo": {
+                "id": 158,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-5,id=5,state=BLOCKED]",
+                    "ThreadInfo [name=Thread-6,id=6,state=BLOCKED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 159,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:38  : synchronized (left) {"
+                },
+                {
+                    "id": 160,
+                    "isSynchronized": true,
+                    "syncMethodName": "DiningPhil$Philosopher.run()V",
+                    "src": " DiningPhil.java:39  : synchronized (right) {"
+                }
+            ]
+        }
+    ],
+    "appName": "fix-this!",
+    "type": "Java Path Finder Trace",
+    "time": "1598857260662000"
+}

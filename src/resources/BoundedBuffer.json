@@ -1,0 +1,1949 @@
+{
+    "transitions": [
+        {
+            "transitionId": 0,
+            "threadInfo": {
+                "id": 0,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 0,
+                "nextThreadName": "main"
+            },
+            "choiceInfo": {
+                "id": 1,
+                "choiceId": "ROOT",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 2,
+                    "noSrc": " [3168 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.<clinit>()V",
+                    "src": " BoundedBuffer.java:34: static int BUFFER_SIZE = 1;"
+                },
+                {
+                    "id": 3,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.<clinit>()V",
+                    "src": " BoundedBuffer.java:35: static int N_PRODUCERS = 4;"
+                },
+                {
+                    "id": 4,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.<clinit>()V",
+                    "src": " BoundedBuffer.java:36: static int N_CONSUMERS = 4;"
+                },
+                {
+                    "id": 5,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.<clinit>()V",
+                    "src": " BoundedBuffer.java:38: static Object DATA = 'fortytwo';"
+                },
+                {
+                    "id": 6,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:119: readArguments( args);"
+                },
+                {
+                    "id": 7,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:133: if (args.length > 0){"
+                },
+                {
+                    "id": 8,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:134: BUFFER_SIZE = Integer.parseInt(args[0]);"
+                },
+                {
+                    "id": 9,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.BUFFER_SIZE",
+                    "src": " BoundedBuffer.java:134: BUFFER_SIZE = Integer.parseInt(args[0]);"
+                },
+                {
+                    "id": 10,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:136: if (args.length > 1){"
+                },
+                {
+                    "id": 11,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:137: N_PRODUCERS = Integer.parseInt(args[1]);"
+                },
+                {
+                    "id": 12,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.N_PRODUCERS",
+                    "src": " BoundedBuffer.java:137: N_PRODUCERS = Integer.parseInt(args[1]);"
+                },
+                {
+                    "id": 13,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:139: if (args.length > 2){"
+                },
+                {
+                    "id": 14,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:140: N_CONSUMERS = Integer.parseInt(args[2]);"
+                },
+                {
+                    "id": 15,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.N_CONSUMERS",
+                    "src": " BoundedBuffer.java:140: N_CONSUMERS = Integer.parseInt(args[2]);"
+                },
+                {
+                    "id": 16,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "BoundedBuffer.readArguments([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:142: }"
+                },
+                {
+                    "id": 17,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:122: BoundedBuffer buf = new BoundedBuffer(BUFFER_SIZE);"
+                },
+                {
+                    "id": 18,
+                    "src": " BoundedBuffer.java:47: public BoundedBuffer(int size) {"
+                },
+                {
+                    "id": 19,
+                    "noSrc": " [1 insn w/o sources]",
+                    "src": " BoundedBuffer.java:42: protected int in = 0;"
+                },
+                {
+                    "id": 20,
+                    "src": " BoundedBuffer.java:43: protected int out= 0;"
+                },
+                {
+                    "id": 21,
+                    "src": " BoundedBuffer.java:44: protected int count= 0;"
+                },
+                {
+                    "id": 22,
+                    "src": " BoundedBuffer.java:48: this.size = size;"
+                },
+                {
+                    "id": 23,
+                    "src": " BoundedBuffer.java:49: buf = new Object[size];"
+                },
+                {
+                    "id": 24,
+                    "isMethodReturn": true,
+                    "returndMethodName": "BoundedBuffer.<init>(I)V",
+                    "src": " BoundedBuffer.java:50: }"
+                },
+                {
+                    "id": 25,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:122: BoundedBuffer buf = new BoundedBuffer(BUFFER_SIZE);"
+                },
+                {
+                    "id": 26,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:124: for (int i=0; i<N_PRODUCERS; i++) {"
+                },
+                {
+                    "id": 27,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:125: new Producer(buf).start();"
+                },
+                {
+                    "id": 28,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.<clinit>()V",
+                    "src": " BoundedBuffer.java:78: static int nProducers = 1;"
+                },
+                {
+                    "id": 29,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:125: new Producer(buf).start();"
+                },
+                {
+                    "id": 30,
+                    "src": " BoundedBuffer.java:81: Producer(BoundedBuffer b) {"
+                },
+                {
+                    "id": 31,
+                    "noSrc": " [145 insn w/o sources]",
+                    "src": " BoundedBuffer.java:82: buf = b;"
+                },
+                {
+                    "id": 32,
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 33,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer$Producer.nProducers",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 34,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 35,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 36,
+                    "noSrc": " [11 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "BoundedBuffer$Producer.<init>(LBoundedBuffer;)V",
+                    "src": " BoundedBuffer.java:84: }"
+                },
+                {
+                    "id": 37,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:125: new Producer(buf).start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 1,
+            "threadInfo": {
+                "id": 38,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 1
+            },
+            "choiceInfo": {
+                "id": 39,
+                "choiceId": "START",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 40,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:124: for (int i=0; i<N_PRODUCERS; i++) {"
+                },
+                {
+                    "id": 41,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:125: new Producer(buf).start();"
+                },
+                {
+                    "id": 42,
+                    "src": " BoundedBuffer.java:81: Producer(BoundedBuffer b) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 2,
+            "threadInfo": {
+                "id": 43,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 44,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 45,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " BoundedBuffer.java:82: buf = b;"
+                },
+                {
+                    "id": 46,
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 47,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer$Producer.nProducers",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 48,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 49,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                }
+            ]
+        },
+        {
+            "transitionId": 3,
+            "threadInfo": {
+                "id": 50,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 51,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 52,
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                }
+            ]
+        },
+        {
+            "transitionId": 4,
+            "threadInfo": {
+                "id": 53,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 54,
+                "choiceId": "EXPOSE",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 55,
+                    "noSrc": " [7 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "BoundedBuffer$Producer.<init>(LBoundedBuffer;)V",
+                    "src": " BoundedBuffer.java:84: }"
+                },
+                {
+                    "id": 56,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:125: new Producer(buf).start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 5,
+            "threadInfo": {
+                "id": 57,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 2
+            },
+            "choiceInfo": {
+                "id": 58,
+                "choiceId": "START",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 59,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:124: for (int i=0; i<N_PRODUCERS; i++) {"
+                },
+                {
+                    "id": 60,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:125: new Producer(buf).start();"
+                },
+                {
+                    "id": 61,
+                    "src": " BoundedBuffer.java:81: Producer(BoundedBuffer b) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 6,
+            "threadInfo": {
+                "id": 62,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 63,
+                "choiceId": "LOCK",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 64,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " BoundedBuffer.java:82: buf = b;"
+                },
+                {
+                    "id": 65,
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 66,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer$Producer.nProducers",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 67,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 68,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                }
+            ]
+        },
+        {
+            "transitionId": 7,
+            "threadInfo": {
+                "id": 69,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 70,
+                "choiceId": "LOCK",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 71,
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                }
+            ]
+        },
+        {
+            "transitionId": 8,
+            "threadInfo": {
+                "id": 72,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 73,
+                "choiceId": "EXPOSE",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 74,
+                    "noSrc": " [7 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "BoundedBuffer$Producer.<init>(LBoundedBuffer;)V",
+                    "src": " BoundedBuffer.java:84: }"
+                },
+                {
+                    "id": 75,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:125: new Producer(buf).start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 9,
+            "threadInfo": {
+                "id": 76,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 3
+            },
+            "choiceInfo": {
+                "id": 77,
+                "choiceId": "START",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 78,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:124: for (int i=0; i<N_PRODUCERS; i++) {"
+                },
+                {
+                    "id": 79,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:125: new Producer(buf).start();"
+                },
+                {
+                    "id": 80,
+                    "src": " BoundedBuffer.java:81: Producer(BoundedBuffer b) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 10,
+            "threadInfo": {
+                "id": 81,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 82,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 83,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " BoundedBuffer.java:82: buf = b;"
+                },
+                {
+                    "id": 84,
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 85,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer$Producer.nProducers",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 86,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                },
+                {
+                    "id": 87,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                }
+            ]
+        },
+        {
+            "transitionId": 11,
+            "threadInfo": {
+                "id": 88,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 89,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 90,
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:83: setName('P' + nProducers++);"
+                }
+            ]
+        },
+        {
+            "transitionId": 12,
+            "threadInfo": {
+                "id": 91,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 92,
+                "choiceId": "EXPOSE",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 93,
+                    "noSrc": " [7 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "BoundedBuffer$Producer.<init>(LBoundedBuffer;)V",
+                    "src": " BoundedBuffer.java:84: }"
+                },
+                {
+                    "id": 94,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Producer.BoundedBuffer$Producer",
+                    "src": " BoundedBuffer.java:125: new Producer(buf).start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 13,
+            "threadInfo": {
+                "id": 95,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 4
+            },
+            "choiceInfo": {
+                "id": 96,
+                "choiceId": "START",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 97,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:124: for (int i=0; i<N_PRODUCERS; i++) {"
+                },
+                {
+                    "id": 98,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:127: for (int i=0; i<N_CONSUMERS; i++) {"
+                },
+                {
+                    "id": 99,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:128: new Consumer(buf).start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 14,
+            "threadInfo": {
+                "id": 100,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 101,
+                "choiceId": "LOCK",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 102,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Consumer.<clinit>()V",
+                    "src": " BoundedBuffer.java:99: static int nConsumers = 1;"
+                },
+                {
+                    "id": 103,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:128: new Consumer(buf).start();"
+                },
+                {
+                    "id": 104,
+                    "src": " BoundedBuffer.java:102: Consumer(BoundedBuffer b) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 15,
+            "threadInfo": {
+                "id": 105,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 106,
+                "choiceId": "LOCK",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 107,
+                    "noSrc": " [119 insn w/o sources]",
+                    "src": " BoundedBuffer.java:103: buf = b;"
+                },
+                {
+                    "id": 108,
+                    "src": " BoundedBuffer.java:104: setName( 'C' + nConsumers++);"
+                },
+                {
+                    "id": 109,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer$Consumer.nConsumers",
+                    "src": " BoundedBuffer.java:104: setName( 'C' + nConsumers++);"
+                },
+                {
+                    "id": 110,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuilder.java.lang.StringBuilder",
+                    "src": " BoundedBuffer.java:104: setName( 'C' + nConsumers++);"
+                },
+                {
+                    "id": 111,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Consumer.BoundedBuffer$Consumer",
+                    "src": " BoundedBuffer.java:104: setName( 'C' + nConsumers++);"
+                }
+            ]
+        },
+        {
+            "transitionId": 16,
+            "threadInfo": {
+                "id": 112,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 113,
+                "choiceId": "LOCK",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 114,
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Consumer.BoundedBuffer$Consumer",
+                    "src": " BoundedBuffer.java:104: setName( 'C' + nConsumers++);"
+                }
+            ]
+        },
+        {
+            "transitionId": 17,
+            "threadInfo": {
+                "id": 115,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 116,
+                "choiceId": "EXPOSE",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 117,
+                    "noSrc": " [7 insn w/o sources]",
+                    "isMethodReturn": true,
+                    "returndMethodName": "BoundedBuffer$Consumer.<init>(LBoundedBuffer;)V",
+                    "src": " BoundedBuffer.java:105: }"
+                },
+                {
+                    "id": 118,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer$Consumer.BoundedBuffer$Consumer",
+                    "src": " BoundedBuffer.java:128: new Consumer(buf).start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 18,
+            "threadInfo": {
+                "id": 119,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 5
+            },
+            "choiceInfo": {
+                "id": 120,
+                "choiceId": "START",
+                "numChoices": 6,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=TERMINATED]",
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 121,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:127: for (int i=0; i<N_CONSUMERS; i++) {"
+                },
+                {
+                    "id": 122,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "BoundedBuffer.main([Ljava/lang/String;)V",
+                    "src": " BoundedBuffer.java:130: }"
+                }
+            ]
+        },
+        {
+            "transitionId": 19,
+            "threadInfo": {
+                "id": 123,
+                "threadId": 1,
+                "threadName": "P1",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 1,
+                "nextThreadName": "P1"
+            },
+            "choiceInfo": {
+                "id": 124,
+                "choiceId": "TERMINATE",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=P1,id=1,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 125,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                }
+            ]
+        },
+        {
+            "transitionId": 20,
+            "threadInfo": {
+                "id": 126,
+                "threadId": 1,
+                "threadName": "P1",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 127,
+                "choiceId": "LOCK",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=P1,id=1,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 128,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer.BoundedBuffer",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                },
+                {
+                    "id": 129,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                },
+                {
+                    "id": 130,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:56: buf[in] = o;"
+                },
+                {
+                    "id": 131,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:58: ++count;"
+                },
+                {
+                    "id": 132,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:59: in = (in + 1) % size;"
+                },
+                {
+                    "id": 133,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "notify",
+                    "src": " BoundedBuffer.java:60: notify();"
+                },
+                {
+                    "id": 134,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:61: }"
+                },
+                {
+                    "id": 135,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "src": " BoundedBuffer.java:89: while(true) {"
+                },
+                {
+                    "id": 136,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                }
+            ]
+        },
+        {
+            "transitionId": 21,
+            "threadInfo": {
+                "id": 137,
+                "threadId": 1,
+                "threadName": "P1",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 138,
+                "choiceId": "LOCK",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=P1,id=1,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 139,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer.BoundedBuffer",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                },
+                {
+                    "id": 140,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                },
+                {
+                    "id": 141,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:56: buf[in] = o;"
+                },
+                {
+                    "id": 142,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:58: ++count;"
+                },
+                {
+                    "id": 143,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:59: in = (in + 1) % size;"
+                },
+                {
+                    "id": 144,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "notify",
+                    "src": " BoundedBuffer.java:60: notify();"
+                },
+                {
+                    "id": 145,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:61: }"
+                },
+                {
+                    "id": 146,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "src": " BoundedBuffer.java:89: while(true) {"
+                },
+                {
+                    "id": 147,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                }
+            ]
+        },
+        {
+            "transitionId": 22,
+            "threadInfo": {
+                "id": 148,
+                "threadId": 1,
+                "threadName": "P1",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 149,
+                "choiceId": "LOCK",
+                "numChoices": 5,
+                "currentChoice": "ThreadInfo [name=P1,id=1,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P1,id=1,state=WAITING]",
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 150,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer.BoundedBuffer",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                },
+                {
+                    "id": 151,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                },
+                {
+                    "id": 152,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "wait",
+                    "src": " BoundedBuffer.java:54: wait();"
+                }
+            ]
+        },
+        {
+            "transitionId": 23,
+            "threadInfo": {
+                "id": 153,
+                "threadId": 2,
+                "threadName": "P2",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING",
+                "threadSwitch": true,
+                "prevTid": 1,
+                "prevThreadName": "P1",
+                "nextTid": 2,
+                "nextThreadName": "P2"
+            },
+            "choiceInfo": {
+                "id": 154,
+                "choiceId": "WAIT",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=P2,id=2,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 155,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                }
+            ]
+        },
+        {
+            "transitionId": 24,
+            "threadInfo": {
+                "id": 156,
+                "threadId": 2,
+                "threadName": "P2",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 157,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=P2,id=2,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 158,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.DATA",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                }
+            ]
+        },
+        {
+            "transitionId": 25,
+            "threadInfo": {
+                "id": 159,
+                "threadId": 2,
+                "threadName": "P2",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 160,
+                "choiceId": "LOCK",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=P2,id=2,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 161,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer.BoundedBuffer",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                },
+                {
+                    "id": 162,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 26,
+            "threadInfo": {
+                "id": 163,
+                "threadId": 2,
+                "threadName": "P2",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 164,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=P2,id=2,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 165,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.count",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 27,
+            "threadInfo": {
+                "id": 166,
+                "threadId": 2,
+                "threadName": "P2",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 167,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 4,
+                "currentChoice": "ThreadInfo [name=P2,id=2,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P2,id=2,state=WAITING]",
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 168,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.size",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                },
+                {
+                    "id": 169,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "wait",
+                    "src": " BoundedBuffer.java:54: wait();"
+                }
+            ]
+        },
+        {
+            "transitionId": 28,
+            "threadInfo": {
+                "id": 170,
+                "threadId": 3,
+                "threadName": "P3",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING",
+                "threadSwitch": true,
+                "prevTid": 2,
+                "prevThreadName": "P2",
+                "nextTid": 3,
+                "nextThreadName": "P3"
+            },
+            "choiceInfo": {
+                "id": 171,
+                "choiceId": "WAIT",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=P3,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 172,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                }
+            ]
+        },
+        {
+            "transitionId": 29,
+            "threadInfo": {
+                "id": 173,
+                "threadId": 3,
+                "threadName": "P3",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 174,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=P3,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 175,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.DATA",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                }
+            ]
+        },
+        {
+            "transitionId": 30,
+            "threadInfo": {
+                "id": 176,
+                "threadId": 3,
+                "threadName": "P3",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 177,
+                "choiceId": "LOCK",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=P3,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 178,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer.BoundedBuffer",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                },
+                {
+                    "id": 179,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 31,
+            "threadInfo": {
+                "id": 180,
+                "threadId": 3,
+                "threadName": "P3",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 181,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=P3,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 182,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.count",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 32,
+            "threadInfo": {
+                "id": 183,
+                "threadId": 3,
+                "threadName": "P3",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 184,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=P3,id=3,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P3,id=3,state=WAITING]",
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 185,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.size",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                },
+                {
+                    "id": 186,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "wait",
+                    "src": " BoundedBuffer.java:54: wait();"
+                }
+            ]
+        },
+        {
+            "transitionId": 33,
+            "threadInfo": {
+                "id": 187,
+                "threadId": 4,
+                "threadName": "P4",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING",
+                "threadSwitch": true,
+                "prevTid": 3,
+                "prevThreadName": "P3",
+                "nextTid": 4,
+                "nextThreadName": "P4"
+            },
+            "choiceInfo": {
+                "id": 188,
+                "choiceId": "WAIT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=P4,id=4,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 189,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                }
+            ]
+        },
+        {
+            "transitionId": 34,
+            "threadInfo": {
+                "id": 190,
+                "threadId": 4,
+                "threadName": "P4",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 191,
+                "choiceId": "SHARED_CLASS",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=P4,id=4,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 192,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.DATA",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                }
+            ]
+        },
+        {
+            "transitionId": 35,
+            "threadInfo": {
+                "id": 193,
+                "threadId": 4,
+                "threadName": "P4",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 194,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=P4,id=4,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 195,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Producer.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "BoundedBuffer.BoundedBuffer",
+                    "src": " BoundedBuffer.java:91: buf.put(DATA);"
+                },
+                {
+                    "id": 196,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 36,
+            "threadInfo": {
+                "id": 197,
+                "threadId": 4,
+                "threadName": "P4",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 198,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=P4,id=4,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 199,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.count",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                }
+            ]
+        },
+        {
+            "transitionId": 37,
+            "threadInfo": {
+                "id": 200,
+                "threadId": 4,
+                "threadName": "P4",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING"
+            },
+            "choiceInfo": {
+                "id": 201,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=P4,id=4,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=P4,id=4,state=WAITING]",
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 202,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "BoundedBuffer.size",
+                    "src": " BoundedBuffer.java:53: while (count == size) {"
+                },
+                {
+                    "id": 203,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.put(Ljava/lang/Object;)V",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "wait",
+                    "src": " BoundedBuffer.java:54: wait();"
+                }
+            ]
+        },
+        {
+            "transitionId": 38,
+            "threadInfo": {
+                "id": 204,
+                "threadId": 5,
+                "threadName": "C1",
+                "threadEntryMethod": "BoundedBuffer.main([Ljava/lang/String;)V",
+                "threadState": "WAITING",
+                "threadSwitch": true,
+                "prevTid": 4,
+                "prevThreadName": "P4",
+                "nextTid": 5,
+                "nextThreadName": "C1"
+            },
+            "choiceInfo": {
+                "id": 205,
+                "choiceId": "WAIT",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=C1,id=5,state=WAITING]",
+                "choices": [
+                    "ThreadInfo [name=C1,id=5,state=WAITING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 206,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Consumer.run()V",
+                    "src": " BoundedBuffer.java:111: Object tmp = buf.get();"
+                },
+                {
+                    "id": 207,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:64: while (count == 0) {"
+                },
+                {
+                    "id": 208,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:67: Object o = buf[out];"
+                },
+                {
+                    "id": 209,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:68: buf[out] = null;"
+                },
+                {
+                    "id": 210,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:70: --count;"
+                },
+                {
+                    "id": 211,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:71: out = (out + 1) % size;"
+                },
+                {
+                    "id": 212,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "notify",
+                    "src": " BoundedBuffer.java:72: notify();"
+                },
+                {
+                    "id": 213,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:73: return (o);"
+                },
+                {
+                    "id": 214,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Consumer.run()V",
+                    "src": " BoundedBuffer.java:111: Object tmp = buf.get();"
+                },
+                {
+                    "id": 215,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Consumer.run()V",
+                    "src": " BoundedBuffer.java:110: while(true) {"
+                },
+                {
+                    "id": 216,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Consumer.run()V",
+                    "src": " BoundedBuffer.java:111: Object tmp = buf.get();"
+                },
+                {
+                    "id": 217,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:64: while (count == 0) {"
+                },
+                {
+                    "id": 218,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:67: Object o = buf[out];"
+                },
+                {
+                    "id": 219,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:68: buf[out] = null;"
+                },
+                {
+                    "id": 220,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:70: --count;"
+                },
+                {
+                    "id": 221,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:71: out = (out + 1) % size;"
+                },
+                {
+                    "id": 222,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "notify",
+                    "src": " BoundedBuffer.java:72: notify();"
+                },
+                {
+                    "id": 223,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:73: return (o);"
+                },
+                {
+                    "id": 224,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Consumer.run()V",
+                    "src": " BoundedBuffer.java:111: Object tmp = buf.get();"
+                },
+                {
+                    "id": 225,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Consumer.run()V",
+                    "src": " BoundedBuffer.java:110: while(true) {"
+                },
+                {
+                    "id": 226,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer$Consumer.run()V",
+                    "src": " BoundedBuffer.java:111: Object tmp = buf.get();"
+                },
+                {
+                    "id": 227,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "src": " BoundedBuffer.java:64: while (count == 0) {"
+                },
+                {
+                    "id": 228,
+                    "isSynchronized": true,
+                    "syncMethodName": "BoundedBuffer.get()Ljava/lang/Object;",
+                    "isThreadRelatedMethod": true,
+                    "threadRelatedMethod": "wait",
+                    "src": " BoundedBuffer.java:65: wait();"
+                }
+            ]
+        }
+    ],
+    "appName": "fix-this!",
+    "type": "Java Path Finder Trace",
+    "time": "1598856625270000"
+}

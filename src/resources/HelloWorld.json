@@ -1,0 +1,564 @@
+{
+    "transitions": [
+        {
+            "transitionId": 0,
+            "threadInfo": {
+                "id": 0,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 0,
+                "nextThreadName": "main"
+            },
+            "choiceInfo": {
+                "id": 1,
+                "choiceId": "ROOT",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 2,
+                    "noSrc": " [3168 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.<clinit>()V",
+                    "src": " HelloWorld.java:1   : public class HelloWorld extends Thread {"
+                },
+                {
+                    "id": 3,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.<clinit>()V",
+                    "src": " HelloWorld.java:1   : public class HelloWorld extends Thread {"
+                },
+                {
+                    "id": 4,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:15  : StringBuffer buf = new StringBuffer();"
+                },
+                {
+                    "id": 5,
+                    "noSrc": " [4 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:15  : StringBuffer buf = new StringBuffer();"
+                },
+                {
+                    "id": 6,
+                    "noSrc": " [12 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:15  : StringBuffer buf = new StringBuffer();"
+                },
+                {
+                    "id": 7,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:16  : HelloWorld hw1 = new HelloWorld(buf, 'Hello, ');"
+                },
+                {
+                    "id": 8,
+                    "src": " HelloWorld.java:5   : HelloWorld(StringBuffer buf, String data) {"
+                },
+                {
+                    "id": 9,
+                    "noSrc": " [145 insn w/o sources]",
+                    "src": " HelloWorld.java:6   : this.buf = buf;"
+                },
+                {
+                    "id": 10,
+                    "src": " HelloWorld.java:7   : this.data = data;"
+                },
+                {
+                    "id": 11,
+                    "isMethodReturn": true,
+                    "returndMethodName": "HelloWorld.<init>(Ljava/lang/StringBuffer;Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:8   : }"
+                },
+                {
+                    "id": 12,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:16  : HelloWorld hw1 = new HelloWorld(buf, 'Hello, ');"
+                },
+                {
+                    "id": 13,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:17  : HelloWorld hw2 = new HelloWorld(buf, 'World!');"
+                },
+                {
+                    "id": 14,
+                    "src": " HelloWorld.java:5   : HelloWorld(StringBuffer buf, String data) {"
+                },
+                {
+                    "id": 15,
+                    "noSrc": " [145 insn w/o sources]",
+                    "src": " HelloWorld.java:6   : this.buf = buf;"
+                },
+                {
+                    "id": 16,
+                    "src": " HelloWorld.java:7   : this.data = data;"
+                },
+                {
+                    "id": 17,
+                    "isMethodReturn": true,
+                    "returndMethodName": "HelloWorld.<init>(Ljava/lang/StringBuffer;Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:8   : }"
+                },
+                {
+                    "id": 18,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:17  : HelloWorld hw2 = new HelloWorld(buf, 'World!');"
+                },
+                {
+                    "id": 19,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:18  : hw1.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 1,
+            "threadInfo": {
+                "id": 20,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 1
+            },
+            "choiceInfo": {
+                "id": 21,
+                "choiceId": "START",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 22,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:19  : hw2.start();"
+                }
+            ]
+        },
+        {
+            "transitionId": 2,
+            "threadInfo": {
+                "id": 23,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 2
+            },
+            "choiceInfo": {
+                "id": 24,
+                "choiceId": "START",
+                "numChoices": 3,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]",
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 25,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:21  : hw1.join();"
+                }
+            ]
+        },
+        {
+            "transitionId": 3,
+            "threadInfo": {
+                "id": 26,
+                "threadId": 1,
+                "threadName": "Thread-1",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadAwake": true,
+                "currentThreadName": "main",
+                "tid": 3,
+                "threadSwitch": true,
+                "prevTid": 0,
+                "prevThreadName": "main",
+                "nextTid": 1,
+                "nextThreadName": "Thread-1"
+            },
+            "choiceInfo": {
+                "id": 27,
+                "choiceId": "JOIN",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 28,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.[run]",
+                    "isMethodCall": true,
+                    "calledMethodName": "HelloWorld.HelloWorld",
+                    "src": " HelloWorld.java:1   : public class HelloWorld extends Thread {"
+                },
+                {
+                    "id": 29,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "src": " HelloWorld.java:11  : buf.append(data);"
+                }
+            ]
+        },
+        {
+            "transitionId": 4,
+            "threadInfo": {
+                "id": 30,
+                "threadId": 1,
+                "threadName": "Thread-1",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 31,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 32,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "HelloWorld.buf",
+                    "src": " HelloWorld.java:11  : buf.append(data);"
+                }
+            ]
+        },
+        {
+            "transitionId": 5,
+            "threadInfo": {
+                "id": 33,
+                "threadId": 1,
+                "threadName": "Thread-1",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 34,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 35,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "HelloWorld.data",
+                    "src": " HelloWorld.java:11  : buf.append(data);"
+                }
+            ]
+        },
+        {
+            "transitionId": 6,
+            "threadInfo": {
+                "id": 36,
+                "threadId": 2,
+                "threadName": "Thread-2",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadSwitch": true,
+                "prevTid": 1,
+                "prevThreadName": "Thread-1",
+                "nextTid": 2,
+                "nextThreadName": "Thread-2"
+            },
+            "choiceInfo": {
+                "id": 37,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 38,
+                    "noSrc": " [1 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.[run]",
+                    "isMethodCall": true,
+                    "calledMethodName": "HelloWorld.HelloWorld",
+                    "src": " HelloWorld.java:1   : public class HelloWorld extends Thread {"
+                },
+                {
+                    "id": 39,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "src": " HelloWorld.java:11  : buf.append(data);"
+                }
+            ]
+        },
+        {
+            "transitionId": 7,
+            "threadInfo": {
+                "id": 40,
+                "threadId": 2,
+                "threadName": "Thread-2",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 41,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 42,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "HelloWorld.buf",
+                    "src": " HelloWorld.java:11  : buf.append(data);"
+                }
+            ]
+        },
+        {
+            "transitionId": 8,
+            "threadInfo": {
+                "id": 43,
+                "threadId": 2,
+                "threadName": "Thread-2",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 44,
+                "choiceId": "SHARED_OBJECT",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 45,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "isFieldAccess": true,
+                    "accessedField": "HelloWorld.data",
+                    "src": " HelloWorld.java:11  : buf.append(data);"
+                }
+            ]
+        },
+        {
+            "transitionId": 9,
+            "threadInfo": {
+                "id": 46,
+                "threadId": 2,
+                "threadName": "Thread-2",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED"
+            },
+            "choiceInfo": {
+                "id": 47,
+                "choiceId": "LOCK",
+                "numChoices": 2,
+                "currentChoice": "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                    "ThreadInfo [name=Thread-2,id=2,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 48,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuffer.java.lang.StringBuffer",
+                    "src": " HelloWorld.java:11  : buf.append(data);"
+                },
+                {
+                    "id": 49,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "src": " HelloWorld.java:11  : buf.append(data);"
+                },
+                {
+                    "id": 50,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "HelloWorld.run()V",
+                    "src": " HelloWorld.java:12  : }"
+                }
+            ]
+        },
+        {
+            "transitionId": 10,
+            "threadInfo": {
+                "id": 51,
+                "threadId": 1,
+                "threadName": "Thread-1",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "TERMINATED",
+                "threadSwitch": true,
+                "prevTid": 2,
+                "prevThreadName": "Thread-2",
+                "nextTid": 1,
+                "nextThreadName": "Thread-1"
+            },
+            "choiceInfo": {
+                "id": 52,
+                "choiceId": "TERMINATE",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]",
+                "choices": [
+                    "ThreadInfo [name=Thread-1,id=1,state=TERMINATED]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 53,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "isMethodCall": true,
+                    "calledMethodName": "java.lang.StringBuffer.java.lang.StringBuffer",
+                    "src": " HelloWorld.java:11  : buf.append(data);"
+                },
+                {
+                    "id": 54,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "src": " HelloWorld.java:11  : buf.append(data);"
+                },
+                {
+                    "id": 55,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.run()V",
+                    "isMethodReturn": true,
+                    "returndMethodName": "HelloWorld.run()V",
+                    "src": " HelloWorld.java:12  : }"
+                }
+            ]
+        },
+        {
+            "transitionId": 11,
+            "threadInfo": {
+                "id": 56,
+                "threadId": 0,
+                "threadName": "main",
+                "threadEntryMethod": "HelloWorld.main([Ljava/lang/String;)V",
+                "threadState": "RUNNING",
+                "threadSwitch": true,
+                "prevTid": 1,
+                "prevThreadName": "Thread-1",
+                "nextTid": 0,
+                "nextThreadName": "main"
+            },
+            "choiceInfo": {
+                "id": 57,
+                "choiceId": "TERMINATE",
+                "numChoices": 1,
+                "currentChoice": "ThreadInfo [name=main,id=0,state=RUNNING]",
+                "choices": [
+                    "ThreadInfo [name=main,id=0,state=RUNNING]"
+                ]
+            },
+            "steps": [
+                {
+                    "id": 58,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:22  : hw2.join();"
+                },
+                {
+                    "id": 59,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:23  : } catch (InterruptedException e) {"
+                },
+                {
+                    "id": 60,
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "isFieldAccess": true,
+                    "accessedField": "HelloWorld.$assertionsDisabled",
+                    "src": " HelloWorld.java:25  : assert (buf.toString().equals('Hello, World!'));"
+                },
+                {
+                    "id": 61,
+                    "noSrc": " [83 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:25  : assert (buf.toString().equals('Hello, World!'));"
+                },
+                {
+                    "id": 62,
+                    "noSrc": " [2 insn w/o sources]",
+                    "isSynchronized": true,
+                    "syncMethodName": "HelloWorld.main([Ljava/lang/String;)V",
+                    "src": " HelloWorld.java:25  : assert (buf.toString().equals('Hello, World!'));"
+                }
+            ]
+        }
+    ],
+    "appName": "fix-this!",
+    "type": "Java Path Finder Trace",
+    "time": "1598804500740000"
+}
